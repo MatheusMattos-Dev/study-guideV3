@@ -1,0 +1,1901 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caderno de Pedagogia | Gabarito de Ouro</title>
+<meta name="description" content="Caderno de Pedagogia da Gabarito de Ouro: 2.600 resumos, 1.520 flashcards com revisão espaçada, questões comentadas, planos de aula, diário de estágio e modelos de TCC, do 1º ao 8º período.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Caderno de Pedagogia | Gabarito de Ouro">
+<meta property="og:description" content="2.600 resumos, 1.520 flashcards, questões comentadas, planos de aula, diário de estágio e modelos de TCC, do 1º ao 8º período.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#071321">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");</script>
+<style>
+/* Tokens ------------------------------------------------------------ */
+:root {
+  /* Paleta oficial Gabarito de Ouro */
+  --marinho: #071321;     /* fundo principal */
+  --ouro: #D4A64A;        /* logotipo e títulos */
+  --ouro-luz: #F5CC73;    /* destaques e detalhes */
+  --ouro-velho: #99651E;  /* sombras e acabamentos */
+  --marfim: #F5F0E6;      /* textos em fundo escuro, seções claras */
+
+  /* Derivados só por transparência das cores acima */
+  --tinta-2: rgba(7, 19, 33, .74);
+  --linha: rgba(7, 19, 33, .17);
+
+  /* Tema escuro, o padrão */
+  --txt: var(--marfim);
+  --txt-2: rgba(245, 240, 230, .78);
+  --txt-3: rgba(245, 240, 230, .6);
+  --titulo: var(--ouro);
+  --acento: var(--ouro);
+  --destaque: var(--ouro-luz);
+  --rotulo: var(--ouro);
+  --regua: rgba(212, 166, 74, .4);
+  --regua-fraca: rgba(212, 166, 74, .18);
+  --regua-forte: var(--ouro);
+  --foco: var(--ouro-luz);
+
+  --f-livro: "Spectral", Georgia, "Times New Roman", serif;
+  --f-ui: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --suave: cubic-bezier(.2, .7, .2, 1);
+
+  --t-menor: .8125rem;
+  --t-1: 1.14rem;
+  --margem: clamp(20px, 5vw, 44px);
+  --topo-alt: 66px;
+}
+/* Tema claro: marfim com um véu de ouro envelhecido */
+.claro {
+  --txt: var(--marinho);
+  --txt-2: var(--tinta-2);
+  --txt-3: rgba(7, 19, 33, .64);
+  --titulo: var(--marinho);
+  --acento: var(--ouro-velho);
+  --destaque: var(--ouro-velho);
+  --rotulo: var(--tinta-2);
+  --regua: rgba(153, 101, 30, .5);
+  --regua-fraca: var(--linha);
+  --regua-forte: var(--ouro-velho);
+  --foco: var(--marinho);
+  background: linear-gradient(rgba(153, 101, 30, .075), rgba(153, 101, 30, .075)), var(--marfim);
+  color: var(--txt);
+}
+
+/* Base -------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 106.25%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--f-ui); font-size: 1rem; line-height: 1.55;
+  color: var(--txt); background: var(--marinho);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, table { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
+[id] { scroll-margin-top: calc(var(--topo-alt) + 20px); }
+[hidden] { display: none !important; }
+
+.wrap { width: 100%; max-width: 1160px; margin-inline: auto; padding-inline: var(--margem); }
+.nota { font-size: var(--t-menor); line-height: 1.5; color: var(--txt-3); }
+.so-celular { display: none; }
+
+.btn {
+  position: relative; overflow: hidden;
+  display: inline-block; padding: 16px 26px;
+  background: var(--ouro-luz); color: var(--marinho);
+  border: 1px solid var(--ouro-luz); border-radius: 2px;
+  font-size: clamp(.98rem, 4.3vw, 1.1rem); font-weight: 700; line-height: 1.2;
+  text-decoration: none; text-align: center;
+  transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.btn::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 36%, rgba(245, 240, 230, .6) 50%, transparent 64%); transform: translateX(-130%); pointer-events: none; }
+.btn:hover { background: var(--ouro); border-color: var(--ouro); }
+.btn:hover::after { transform: translateX(130%); transition: transform .75s var(--suave); }
+.btn:active { transform: scale(.985); }
+.btn--pequeno { padding: 10px 16px; font-size: 1rem; white-space: nowrap; }
+.link { color: var(--ouro-luz); font-weight: 600; text-underline-offset: 4px; }
+.link:hover { color: var(--marfim); }
+.claro .link { color: var(--marinho); }
+.claro .link:hover { color: var(--ouro-velho); }
+
+.progresso { position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 40; pointer-events: none; }
+.progresso span { display: block; height: 100%; background: var(--ouro-luz); transform-origin: left; transform: scaleX(0); }
+
+/* Topo -------------------------------------------------------------- */
+.topo { background: var(--marinho); border-bottom: 1px solid var(--regua-fraca); }
+.topo__in { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--topo-alt); }
+.marca { display: inline-grid; grid-template-columns: auto auto; column-gap: 10px; align-items: center; text-decoration: none; white-space: nowrap; }
+.marca__emblema { height: 34px; width: auto; grid-row: 1 / 3; }
+.marca__nome, .marca__desc { grid-column: 2; }
+.marca__nome { font-family: var(--f-livro); font-weight: 600; font-size: 1.08rem; line-height: 1; color: var(--ouro); align-self: end; }
+.marca__desc { font-size: .8rem; line-height: 1.1; margin-top: 4px; color: var(--txt-2); align-self: start; }
+.topo__preco { display: none; }
+.topo__nav { display: none; }
+@media (max-width: 349px) {
+  .marca__emblema { display: none; }
+  .sumario__lista { grid-template-columns: minmax(0, 1fr); }
+  .grupo__lista { columns: 1; }
+}
+
+/* Capa -------------------------------------------------------------- */
+.capa { position: relative; overflow: hidden; padding-block: clamp(16px, 4vw, 52px) clamp(36px, 5vw, 52px); background: radial-gradient(80% 46% at 50% 26%, rgba(153, 101, 30, .2), transparent 72%); }
+.capa::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(245, 240, 230, .055) 0 1px, transparent 1px 80px) center top;
+  -webkit-mask-image: linear-gradient(#000 50%, transparent 96%); mask-image: linear-gradient(#000 50%, transparent 96%);
+}
+.capa__wrap { position: relative; z-index: 1; display: flex; flex-direction: column; gap: clamp(36px, 5vw, 52px); }
+.capa__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: center; justify-items: center; text-align: center; }
+.vitrine__selo img { display: block; width: 100%; }
+/* brilho que passa só sobre o ouro do emblema */
+.brilho::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(105deg, transparent 40%, rgba(245, 240, 230, .75) 50%, transparent 60%) no-repeat;
+  background-size: 260% 100%; background-position: 130% 0;
+  -webkit-mask: url(assets/emblema.webp) center / contain no-repeat; mask: url(assets/emblema.webp) center / contain no-repeat;
+}
+.capa__titulo { font-family: var(--f-livro); font-weight: 500; font-size: clamp(2.6rem, 14.6vw, 5.6rem); font-size: clamp(2.6rem, min(14.6vw, 9.6svh), 5.6rem); line-height: 1.02; letter-spacing: -.022em; color: var(--ouro); }
+.sobe { display: block; overflow: hidden; padding-top: .04em; }
+.sobe > span { display: block; white-space: nowrap; }
+.capa__lema { font-family: var(--f-livro); font-style: italic; font-size: clamp(1.3rem, 4.8vw, 2.05rem); line-height: 1.2; margin-top: 8px; }
+.capa__lead { font-size: 1.03rem; line-height: 1.5; max-width: 50ch; margin: 12px auto 0; color: var(--txt-2); }
+.lead-l { display: none; }
+.capa__lead b { color: var(--txt); font-weight: 600; }
+.capa__acao { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 26px; }
+.capa__garantias { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; font-size: .92rem; color: var(--txt-2); }
+.capa__garantias li { display: inline-flex; align-items: center; gap: 7px; }
+.capa__garantias svg { width: 16px; height: 16px; flex: none; color: var(--ouro-luz); }
+
+/* Vitrine: páginas do caderno sobre a mesa */
+.vitrine { position: relative; order: -1; width: min(100%, 400px); height: 158px; height: clamp(150px, 23.5svh, 200px); font-size: 11.5px; text-align: left; }
+.vitrine__pag, .vitrine__selo {
+  position: absolute; width: var(--w); left: var(--x); top: var(--y);
+  transform: translate3d(calc(var(--mx, 0) * var(--d) * 1px), calc(var(--my, 0) * var(--d) * 1px), 0) rotate(var(--r, 0deg));
+  transition: transform .7s var(--suave);
+}
+.vitrine__pag { box-shadow: 0 1.8em 3.2em -1.4em rgba(0, 0, 0, .95), 0 0 0 1px rgba(7, 19, 33, .08); }
+.vitrine__pag--resumo { --w: 54%; --x: 43%; --y: 0%; --r: 5deg; --d: 12; --n: 0; }
+.vitrine__pag--ficha { --w: 54%; --x: 3%; --y: 3%; --r: -5deg; --d: 22; --n: 1; }
+/* as duas páginas de trás somem aos poucos atrás do flashcard */
+.vitrine__pag--resumo, .vitrine__pag--ficha { max-height: 106%; overflow: hidden; -webkit-mask-image: linear-gradient(#000 38%, transparent 94%); mask-image: linear-gradient(#000 38%, transparent 94%); }
+/* o flashcard é um botão: toque para virar */
+.vitrine__pag--cartao { --w: 94%; --x: 3%; --y: auto; bottom: 0; --r: -1.5deg; --d: 34; --n: 2; z-index: 2; display: block; padding: 0; border: 0; font-size: 1.16em; line-height: inherit; text-align: left; -webkit-appearance: none; appearance: none; }
+.vitrine__pag--cartao:focus-visible { outline-color: var(--ouro-luz); }
+.vitrine__vira { display: block; padding: 1em 1.25em 1.05em; font-family: var(--f-livro); line-height: 1.38; }
+.vitrine__selo { display: none; pointer-events: none; --w: 35%; --x: 67%; --y: 55%; --d: 46; --n: 3; z-index: 3; filter: drop-shadow(0 1.2em 1.4em rgba(0, 0, 0, .6)); }
+.vitrine .folha__cab { padding: .7em 1.25em; font-size: .74em; gap: .8em; white-space: nowrap; overflow: hidden; }
+.vitrine__corpo { padding: 1em 1.25em 1.15em; font-family: var(--f-livro); line-height: 1.38; }
+.vitrine__titulo { font-weight: 600; font-size: 1.36em; line-height: 1.14; }
+.vitrine__lista { margin-top: .7em; display: grid; gap: .28em; }
+.vitrine__lista li { position: relative; padding-left: 1em; }
+.vitrine__lista li::before { content: ""; position: absolute; left: 0; top: .6em; width: .32em; height: .32em; border-radius: 50%; background: var(--ouro-velho); }
+.vitrine .chaves { margin-top: .7em; gap: .4em; }
+.vitrine .chaves li { font-size: .82em; padding: .16em .6em; }
+.vitrine__rotulo { margin-top: 1em; font-family: var(--f-ui); font-size: .76em; font-weight: 700; color: var(--tinta-2); }
+.vitrine .barra80 { height: .62em; margin-top: .5em; }
+.vitrine__linha { display: flex; justify-content: space-between; gap: 1em; font-family: var(--f-ui); font-size: .8em; font-weight: 600; color: var(--tinta-2); }
+.vitrine__q { display: block; margin-top: .4em; font-weight: 500; font-size: 1.46em; line-height: 1.14; }
+.vitrine__r { display: block; min-height: 3.42em; margin-top: .6em; padding-top: .6em; border-top: 1px solid var(--linha); font-size: 1.04em; }
+.vitrine__r--dica { font-family: var(--f-ui); font-size: .9em; font-weight: 600; color: var(--tinta-2); min-height: 3.95em; text-decoration: underline; text-decoration-color: var(--ouro-velho); text-underline-offset: 4px; }
+
+.fatos { position: relative; display: grid; grid-template-columns: 1fr 1fr; text-align: center; }
+.fatos::before, .fatos::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: var(--ouro); transform-origin: center; }
+.fatos::before { top: 0; } .fatos::after { bottom: 0; }
+.fatos div { display: flex; flex-direction: column-reverse; padding: 18px 10px; }
+.fatos div:nth-child(even) { border-left: 1px solid var(--regua-fraca); }
+.fatos div:nth-child(n+3) { border-top: 1px solid var(--regua-fraca); }
+.fatos dd { font-family: var(--f-livro); font-weight: 500; font-size: clamp(2.1rem, 8vw, 2.8rem); line-height: 1; color: var(--ouro-luz); font-variant-numeric: tabular-nums; }
+.fatos dt { margin-top: 6px; color: var(--txt-2); line-height: 1.3; font-size: .95rem; }
+
+/* Sumário ----------------------------------------------------------- */
+.sumario { padding-block: clamp(44px, 7vw, 88px); }
+.sumario__titulo { font-family: var(--f-livro); font-weight: 500; font-size: clamp(1.7rem, 5vw, 2rem); color: var(--titulo); }
+.sumario__lista { margin-top: 16px; border-top: 1px solid var(--regua); }
+.sumario__lista a { display: grid; grid-template-columns: 3.1rem 1fr; gap: 2px 8px; padding: 13px 0; border-bottom: 1px solid var(--regua-fraca); text-decoration: none; }
+.sumario__num { grid-row: 1 / 3; font-family: var(--f-livro); font-weight: 600; font-size: 1.2rem; color: var(--acento); transition: transform .25s var(--suave); }
+.sumario__nome { font-family: var(--f-livro); font-weight: 500; font-size: 1.24rem; line-height: 1.2; }
+.sumario__desc { color: var(--txt-2); font-size: .94rem; line-height: 1.4; }
+.sumario__lista a:hover .sumario__num, .sumario__lista a:active .sumario__num { transform: translateX(5px); }
+.sumario__lista a:hover .sumario__nome { color: var(--acento); }
+
+/* Capítulo ---------------------------------------------------------- */
+.cap { padding-block: clamp(52px, 8vw, 100px); }
+.cap__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.cap__num { position: relative; display: inline-block; min-width: 3.4rem; padding-bottom: 10px; font-family: var(--f-livro); font-weight: 600; font-size: 1.1rem; color: var(--acento); }
+.cap__num::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: var(--regua-forte); transform-origin: left; }
+.cap__titulo { font-family: var(--f-livro); font-weight: 500; font-size: clamp(2.05rem, 7.4vw, 2.55rem); line-height: 1.08; letter-spacing: -.012em; color: var(--titulo); margin-top: 14px; text-wrap: balance; }
+.cap__desc { margin-top: 12px; color: var(--txt-2); font-size: var(--t-1); line-height: 1.5; max-width: 46ch; }
+.cap__corpo > * + * { margin-top: 40px; }
+.sub { font-family: var(--f-livro); font-weight: 500; font-size: 1.4rem; line-height: 1.2; color: var(--txt); }
+.sub + * { margin-top: 14px; }
+.texto { color: var(--txt-2); max-width: 62ch; }
+
+/* Listas e tabelas -------------------------------------------------- */
+.itens { border-top: 1px solid var(--regua); }
+.itens li { padding: 12px 0; border-bottom: 1px solid var(--regua-fraca); color: var(--txt-2); }
+.itens b { color: var(--txt); font-weight: 600; }
+
+.tabela { width: 100%; border-collapse: collapse; }
+.tabela th { text-align: left; font-size: var(--t-menor); font-weight: 600; color: var(--rotulo); padding: 0 14px 10px 0; border-bottom: 1px solid var(--regua); }
+.tabela td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--regua-fraca); vertical-align: top; color: var(--txt-2); }
+.tabela td:first-child { font-family: var(--f-livro); font-weight: 500; font-size: 1.1rem; line-height: 1.3; color: var(--txt); }
+.tabela .num { white-space: nowrap; font-weight: 600; color: var(--txt); }
+
+/* Folha: página de marfim do caderno -------------------------------- */
+.folha { background: var(--marfim); color: var(--marinho); border-radius: 2px; box-shadow: 0 26px 50px -30px rgba(0, 0, 0, .95); --foco: var(--marinho); }
+.claro .folha { box-shadow: 0 0 0 1px var(--linha), 0 22px 40px -28px rgba(7, 19, 33, .55); }
+.folha__cab { display: flex; justify-content: space-between; gap: 12px; padding: 10px clamp(16px, 4vw, 26px); border-bottom: 1px solid var(--linha); font-size: .76rem; font-weight: 600; color: var(--tinta-2); }
+.folha__corpo { padding: clamp(18px, 4vw, 28px) clamp(16px, 4vw, 26px); font-family: var(--f-livro); font-size: 1.08rem; line-height: 1.5; }
+.folha__meta { font-family: var(--f-ui); font-size: var(--t-menor); font-weight: 600; color: var(--tinta-2); }
+.folha__titulo { font-family: var(--f-livro); font-weight: 600; font-size: clamp(1.45rem, 4.6vw, 1.8rem); line-height: 1.14; margin-top: 4px; }
+.folha__corpo p + p, .folha__corpo ul + p, .folha__corpo ol + p, .folha__corpo p + ol, .folha__corpo p + ul, .folha__corpo h3 + * { margin-top: 12px; }
+.folha__corpo ul li { position: relative; padding-left: 16px; }
+.folha__corpo ul li + li { margin-top: 5px; }
+.folha__corpo ul li::before { content: ""; position: absolute; left: 0; top: .66em; width: 5px; height: 5px; border-radius: 50%; background: var(--ouro-velho); }
+.folha__corpo ol { counter-reset: p; }
+.folha__corpo ol li { counter-increment: p; position: relative; padding-left: 1.6em; }
+.folha__corpo ol li + li { margin-top: 6px; }
+.folha__corpo ol li::before { content: counter(p) "."; position: absolute; left: 0; font-weight: 600; }
+.folha mark { background: rgba(245, 204, 115, .7); color: inherit; padding: 0 3px; white-space: nowrap; }
+.folha .erro { font-family: var(--f-ui); font-size: var(--t-menor); line-height: 1.45; padding: 10px 12px; border-left: 3px solid var(--ouro-velho); background: rgba(153, 101, 30, .1); }
+.campo { display: grid; gap: 1px; }
+.campo + .campo { margin-top: 12px; }
+.campo b { font-family: var(--f-ui); font-size: var(--t-menor); font-weight: 700; color: var(--tinta-2); }
+.folhas { display: grid; gap: 20px; align-items: start; }
+
+/* Fichário ---------------------------------------------------------- */
+.ciclos { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: var(--t-menor); color: var(--txt-2); }
+.ciclos li { display: inline-flex; align-items: center; gap: 8px; }
+.cor { width: 22px; height: 4px; background: var(--c); flex: none; }
+/* o ouro clareia a cada ciclo do curso */
+.c-basico { --c: var(--ouro-velho); }
+.c-clinico { --c: var(--ouro); }
+.c-internato { --c: var(--ouro-luz); }
+.abas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 12px; }
+.aba { position: relative; min-height: 50px; padding: 12px 2px 6px; background: transparent; border: 1px solid var(--regua); border-radius: 2px; font-weight: 600; line-height: 1; color: var(--txt-2); transition: background-color .18s ease, color .18s ease, border-color .18s ease; }
+.aba::before { content: ""; position: absolute; inset: -1px -1px auto -1px; height: 4px; background: var(--c); }
+.aba:hover { color: var(--marfim); border-color: var(--ouro); }
+.aba[aria-selected="true"] { background: var(--marfim); border-color: var(--marfim); color: var(--marinho); }
+.painel { margin-top: 20px; }
+.painel__disc { color: var(--txt-2); max-width: 62ch; }
+.painel__disc b { color: var(--txt); font-weight: 600; }
+.ficha { margin-top: 16px; }
+.ficha__topo { padding: 18px clamp(16px, 4vw, 26px); border-bottom: 1px solid var(--linha); }
+.ficha__dados > div { display: grid; gap: 2px; padding: 12px clamp(16px, 4vw, 26px); border-bottom: 1px solid var(--linha); }
+.ficha__dados dt, .ficha__rotulo { font-size: var(--t-menor); font-weight: 700; color: var(--tinta-2); }
+.ficha__dados dd { font-family: var(--f-livro); font-size: 1.06rem; line-height: 1.4; }
+.chaves { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 2px; }
+.chaves li { font-family: var(--f-ui); font-size: .92rem; padding: 2px 9px; background: rgba(245, 204, 115, .62); }
+.ficha__bloco { padding: 14px clamp(16px, 4vw, 26px) 16px; border-bottom: 1px solid var(--linha); }
+.barra80 { display: flex; height: 10px; margin-top: 10px; }
+.barra80 span { flex: var(--m) 1 0; background: var(--s); transform-origin: left; }
+.etapas { margin-top: 10px; }
+.etapas li { display: grid; grid-template-columns: 12px 7.2rem 3.6rem 1fr; gap: 8px; align-items: baseline; padding: 5px 0; font-size: .94rem; line-height: 1.35; }
+.etapas i { width: 10px; height: 10px; background: var(--s); align-self: center; }
+.etapas b { font-weight: 700; }
+.etapas .min { color: var(--tinta-2); white-space: nowrap; }
+.etapas .desc { font-family: var(--f-livro); font-size: 1rem; }
+.s1 { --s: rgba(153, 101, 30, .2); } .s2 { --s: rgba(153, 101, 30, .4); } .s3 { --s: rgba(153, 101, 30, .6); } .s4 { --s: rgba(153, 101, 30, .8); } .s5 { --s: var(--ouro-velho); }
+.ativ { margin-top: 8px; font-family: var(--f-livro); font-size: 1.04rem; line-height: 1.4; counter-reset: a; }
+.ativ li { counter-increment: a; position: relative; padding: 6px 0 6px 1.6em; }
+.ativ li::before { content: counter(a) "."; position: absolute; left: 0; font-weight: 600; }
+.ativ b { font-family: var(--f-ui); font-size: .94rem; font-weight: 700; }
+.ficha__pe { padding: 12px clamp(16px, 4vw, 26px); font-size: var(--t-menor); color: var(--tinta-2); }
+.ficha .nota { color: var(--tinta-2); margin-top: 4px; }
+
+/* Flashcards -------------------------------------------------------- */
+.deck__dica { font-weight: 600; margin-bottom: 14px; }
+.deck__pilha { position: relative; max-width: 30rem; perspective: 1200px; }
+.deck__folha { position: absolute; inset: 0; background: var(--marfim); border-radius: 2px; }
+.deck__folha--1 { transform: translate(7px, 7px); opacity: .5; }
+.deck__folha--2 { transform: translate(14px, 14px); opacity: .24; }
+.cartao { position: relative; display: flex; flex-direction: column; min-height: 18.5rem; padding: 22px; backface-visibility: hidden; }
+.cartao__topo { display: flex; justify-content: space-between; gap: 12px; font-size: var(--t-menor); font-weight: 600; color: var(--tinta-2); }
+.cartao__disc { font-weight: 700; color: var(--marinho); }
+.cartao__corpo { flex: 1; padding-block: 16px 20px; font-family: var(--f-livro); }
+.cartao__pergunta { font-weight: 500; font-size: clamp(1.5rem, 5.6vw, 1.85rem); line-height: 1.16; }
+.cartao__resposta { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--linha); font-size: 1.08rem; line-height: 1.5; }
+.cartao__fim strong { display: block; font-weight: 600; font-size: 1.6rem; line-height: 1.15; }
+.cartao__fim p { margin-top: 8px; color: var(--tinta-2); }
+.virar { width: 100%; min-height: 52px; padding: 14px 18px; background: var(--marinho); color: var(--marfim); border: 0; border-radius: 2px; font-weight: 700; font-size: 1.05rem; line-height: 1.2; transition: box-shadow .15s ease; }
+.virar:hover, .fim-acoes .btn:hover { box-shadow: inset 0 0 0 2px var(--ouro); }
+.notas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.notas__rotulo { grid-column: 1 / -1; font-size: var(--t-menor); color: var(--tinta-2); }
+.nota-btn { display: grid; gap: 1px; min-height: 54px; padding: 8px 2px; background: transparent; border: 1.5px solid var(--marinho); border-radius: 2px; font-weight: 700; line-height: 1.15; text-align: center; transition: background-color .15s ease; }
+.nota-btn small { font-size: .72rem; font-weight: 400; color: var(--tinta-2); }
+.nota-btn:hover { background: rgba(7, 19, 33, .07); }
+.fim-acoes { display: grid; gap: 8px; }
+.fim-acoes .btn { width: 100%; background: var(--marinho); border-color: var(--marinho); color: var(--ouro-luz); font-size: 1rem; }
+.link-btn { background: none; border: 0; padding: 8px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-align: left; }
+.deck__status { min-height: 1.55em; margin-top: 24px; color: var(--txt-2); }
+
+.intervalos { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--regua); }
+.intervalos li { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--regua-fraca); }
+.intervalos b { display: block; font-family: var(--f-livro); font-weight: 500; font-size: 1.5rem; line-height: 1.1; color: var(--destaque); }
+.intervalos span { color: var(--txt-2); font-size: .94rem; }
+
+.galeria { border-top: 1px solid var(--regua); display: grid; }
+.mini { padding: 14px 0; border-bottom: 1px solid var(--regua-fraca); }
+.mini__disc { font-size: var(--t-menor); font-weight: 600; color: var(--rotulo); }
+.mini__p { font-family: var(--f-livro); font-weight: 500; font-size: 1.14rem; line-height: 1.25; margin-top: 2px; }
+.mini__r { color: var(--txt-2); margin-top: 4px; line-height: 1.45; }
+.mais { margin-top: 18px; min-height: 48px; background: none; border: 1px solid var(--regua); border-radius: 2px; padding: 12px 18px; font-weight: 600; color: var(--destaque); transition: border-color .15s ease; }
+.mais:hover { border-color: var(--destaque); }
+
+/* Disciplinas ------------------------------------------------------- */
+.indice { display: grid; gap: 28px; }
+.grupo__nome { font-family: var(--f-livro); font-weight: 500; font-size: 1.2rem; padding-bottom: 8px; border-bottom: 1px solid var(--regua); }
+.grupo__lista { margin-top: 8px; columns: 2; column-gap: 24px; color: var(--txt-2); line-height: 1.3; }
+.grupo__lista li { break-inside: avoid; padding-block: 4px; }
+
+/* Questão ----------------------------------------------------------- */
+.questao__corpo { padding: clamp(18px, 4vw, 28px) clamp(16px, 4vw, 26px); }
+.questao__enunciado { font-family: var(--f-livro); font-weight: 500; font-size: clamp(1.3rem, 4.6vw, 1.5rem); line-height: 1.25; }
+.alternativas { margin-top: 16px; display: grid; gap: 8px; }
+.alt { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: center; width: 100%; min-height: 54px; padding: 9px 12px; background: transparent; border: 1.5px solid var(--linha); border-radius: 2px; text-align: left; font-family: var(--f-livro); font-size: 1.08rem; line-height: 1.3; color: var(--marinho); transition: border-color .15s ease, background-color .25s ease; }
+.alt:hover:enabled { border-color: var(--marinho); }
+.alt:disabled { cursor: default; color: var(--marinho); opacity: 1; }
+.alt__bolha { display: grid; place-items: center; width: 32px; height: 32px; border: 2px solid var(--marinho); border-radius: 50%; font-family: var(--f-ui); font-weight: 700; font-size: .92rem; line-height: 1; transition: background-color .25s ease; }
+.alt--certa { border-color: var(--ouro-velho); background: rgba(245, 204, 115, .45); }
+.alt--certa .alt__bolha { background: var(--ouro-luz); border-color: var(--ouro-velho); }
+.alt--errada { border-style: dashed; border-color: var(--marinho); }
+.alt--errada .alt__bolha { border-style: dashed; }
+.gabarito:not(:empty) { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--linha); }
+.gabarito__titulo { font-weight: 700; font-size: 1.08rem; }
+.gabarito p + p { margin-top: 6px; font-family: var(--f-livro); font-size: 1.06rem; line-height: 1.45; }
+.questao__dica { margin-top: 14px; font-size: var(--t-menor); color: var(--tinta-2); }
+
+/* TCC --------------------------------------------------------------- */
+.modelos { display: grid; gap: 20px; align-items: start; }
+.modelo__tipo { font-family: var(--f-ui); font-size: var(--t-menor); font-weight: 700; color: var(--tinta-2); }
+.modelo__tema { font-family: var(--f-livro); font-weight: 600; font-size: 1.22rem; line-height: 1.22; margin-top: 4px; }
+.modelo ol { margin-top: 12px; font-size: 1.02rem; }
+.modelo__vem { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--linha); font-family: var(--f-ui); font-size: var(--t-menor); line-height: 1.45; color: var(--tinta-2); }
+
+/* Oferta ------------------------------------------------------------ */
+.oferta__esq { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.grupos { display: grid; gap: 28px; }
+.grupos h3 { font-family: var(--f-livro); font-weight: 500; font-size: 1.25rem; line-height: 1.2; }
+.grupo-inc summary { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; list-style: none; padding-bottom: 8px; border-bottom: 1px solid var(--regua); pointer-events: none; }
+.grupo-inc summary::-webkit-details-marker { display: none; }
+.grupo-inc__n { display: none; font-size: var(--t-menor); color: var(--txt-3); white-space: nowrap; }
+.grupos ul { margin-top: 6px; }
+.grupos li { position: relative; padding: 6px 0 6px 18px; color: var(--txt-2); line-height: 1.4; }
+.grupos li::before { content: ""; position: absolute; left: 0; top: 1em; width: 9px; height: 1px; background: var(--ouro); }
+
+.recibo { border: 1px solid var(--ouro); border-radius: 2px; padding: clamp(20px, 5vw, 32px); box-shadow: 0 0 0 5px var(--marinho), 0 0 0 6px var(--ouro-velho); margin: 6px; }
+.recibo__topo { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.recibo__emblema { width: 88px; flex: none; }
+.recibo__nome { font-family: var(--f-livro); font-weight: 500; font-size: 1.3rem; line-height: 1.15; }
+.recibo__marca { color: var(--txt-2); font-size: .92rem; }
+.preco { display: flex; align-items: flex-start; gap: 6px; margin-top: 16px; font-family: var(--f-livro); font-weight: 500; line-height: .9; color: var(--ouro-luz); }
+.preco__moeda { font-size: 1.5rem; padding-top: .5rem; }
+.preco__valor { font-size: clamp(4.6rem, 20vw, 6.2rem); letter-spacing: -.02em; }
+.preco__cent { font-size: 2rem; padding-top: .45rem; }
+.recibo__conta { margin-top: 12px; font-weight: 600; }
+.recibo .btn { width: 100%; margin-top: 18px; padding-inline: 10px; font-size: clamp(.86rem, 4.1vw, 1.1rem); white-space: nowrap; }
+.condicoes { margin-top: 20px; border-top: 1px solid var(--regua); font-size: .94rem; }
+.condicoes div { display: grid; grid-template-columns: 6.4rem 1fr; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--regua-fraca); }
+.condicoes dt { color: var(--ouro); font-weight: 600; }
+.condicoes dd { color: var(--txt-2); line-height: 1.4; }
+
+.depois { display: grid; gap: 36px; }
+.garantia { display: grid; grid-template-columns: 84px 1fr; gap: 18px; align-items: start; }
+.garantia__selo { display: grid; place-content: center; justify-items: center; width: 84px; height: 84px; border: 1px solid var(--ouro); border-radius: 50%; box-shadow: inset 0 0 0 4px var(--marinho), inset 0 0 0 5px var(--ouro-velho); color: var(--ouro-luz); line-height: 1; }
+.garantia__selo b { font-family: var(--f-livro); font-weight: 500; font-size: 2.1rem; }
+.garantia__selo span { font-size: .74rem; font-weight: 600; }
+.garantia p { margin-top: 6px; color: var(--txt-2); }
+.passos { counter-reset: s; border-top: 1px solid var(--regua); }
+.passos li { counter-increment: s; position: relative; padding: 11px 0 11px 2.2rem; border-bottom: 1px solid var(--regua-fraca); color: var(--txt-2); }
+.passos li::before { content: counter(s) "."; position: absolute; left: 0; font-family: var(--f-livro); font-weight: 500; font-size: 1.15rem; color: var(--ouro); }
+.passos b { color: var(--txt); font-weight: 600; }
+
+/* Perguntas e contato ----------------------------------------------- */
+.faq { border-top: 1px solid var(--regua); }
+.faq details { border-bottom: 1px solid var(--regua-fraca); }
+.faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 56px; padding: 14px 0; cursor: pointer; list-style: none; font-family: var(--f-livro); font-weight: 500; font-size: 1.2rem; line-height: 1.3; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; flex: none; width: 10px; height: 10px; margin-right: 4px; border-right: 1.5px solid var(--acento); border-bottom: 1.5px solid var(--acento); transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--suave); }
+.faq details[open] summary::after { transform: translateY(3px) rotate(225deg); }
+.faq details p { padding: 0 0 18px; max-width: 64ch; color: var(--txt-2); }
+.contato__email { font-family: var(--f-livro); font-weight: 500; font-size: clamp(1.2rem, 5vw, 1.7rem); color: var(--txt); text-decoration-color: var(--acento); text-underline-offset: 6px; overflow-wrap: anywhere; }
+
+.rodape { border-top: 1px solid var(--regua); color: var(--txt-3); padding-block: 32px calc(104px + env(safe-area-inset-bottom)); font-size: var(--t-menor); }
+.rodape__in { display: grid; gap: 8px; }
+.rodape strong { font-family: var(--f-livro); font-weight: 600; font-size: 1.15rem; color: var(--ouro); }
+
+/* Barra de compra no celular --------------------------------------- */
+.barra { position: fixed; inset: auto 0 0 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px var(--margem) calc(10px + env(safe-area-inset-bottom)); background: var(--marinho); border-top: 1px solid var(--ouro-velho); box-shadow: 0 -14px 30px -12px rgba(0, 0, 0, .9); transform: translateY(110%); visibility: hidden; transition: transform .3s var(--suave), visibility 0s linear .3s; }
+.barra[data-visivel="true"] { transform: none; visibility: visible; transition: transform .3s var(--suave), visibility 0s; }
+.barra__txt { font-size: var(--t-menor); line-height: 1.25; min-width: 0; color: var(--txt-2); }
+.barra__txt { flex: 1; }
+.barra__txt b { display: block; font-size: .95rem; font-weight: 600; color: var(--txt); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.barra__sumario { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px solid var(--regua); border-radius: 2px; color: var(--ouro-luz); }
+.barra__sumario svg { width: 20px; height: 20px; }
+.trilho-pos { display: none; }
+.barra .btn { flex: none; min-height: 44px; }
+
+/* Celular ----------------------------------------------------------- */
+@media (max-width: 619px) {
+  .so-celular { display: block; }
+  /* alvos de toque confortáveis */
+  .so-largo, .capa__garantias .so-largo, .capa__acao .link { display: none; }
+  .capa { padding-top: 12px; padding-bottom: 28px; }
+  .capa__wrap { gap: 18px; }
+  .capa__titulo { font-size: clamp(2.6rem, min(13.8vw, 9.4svh), 5.6rem); }
+  .capa__lema { margin-top: 6px; }
+  .capa__lead { margin-top: 10px; text-wrap: balance; }
+  .capa__acao { margin-top: 16px; }
+  .capa__garantias { margin-top: 12px; gap: 6px 20px; font-size: .9rem; }
+  /* os quatro números em uma linha só, dentro da dobra */
+  .fatos { grid-template-columns: repeat(4, 1fr); }
+  .fatos div { padding: 10px 2px 9px; }
+  .fatos div:nth-child(n) { border-top: 0; }
+  .fatos div:nth-child(n+2) { border-left: 1px solid var(--regua-fraca); }
+  .fatos dd { font-size: clamp(1.25rem, 6.6vw, 1.65rem); }
+  .fatos dt { margin-top: 4px; font-size: .72rem; }
+  .contato__email { display: inline-block; padding-block: 8px; }
+  /* sumário em duas colunas, só com os nomes */
+  .sumario__lista { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 16px; }
+  .grupo__lista { font-size: .95rem; overflow-wrap: anywhere; }
+  .sumario__lista a { grid-template-columns: 2.2rem 1fr; align-items: center; min-height: 58px; padding: 9px 0; }
+  .sumario__num { grid-row: auto; font-size: 1rem; }
+  .sumario__nome { font-size: 1.06rem; line-height: 1.18; }
+  .sumario__desc { display: none; }
+  /* tabelas de três colunas em duas linhas */
+  .tabela--meta tr, .tabela--periodo tr { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; }
+  .tabela--meta td:first-child, .tabela--periodo td:nth-child(3) { grid-column: 1 / -1; }
+  .tabela--meta td:nth-child(n+2) { font-size: .92rem; }
+  .tabela--meta td:nth-child(3) { text-align: right; color: var(--txt-3); }
+  .tabela--periodo td.num { text-align: right; align-self: baseline; }
+  .tabela--periodo td:nth-child(3) { font-size: .95rem; line-height: 1.45; }
+  /* flashcards de amostra em cartões de marfim, para deslizar */
+  .galeria.trilho { border-top: 0; }
+  .galeria .mini { flex: 0 0 80%; display: flex; flex-direction: column; min-height: 10.5rem; padding: 16px 16px 18px; background: var(--marfim); color: var(--marinho); border: 0; border-radius: 2px; box-shadow: 0 18px 34px -24px rgba(0, 0, 0, .95); }
+  .galeria .mini[hidden] { display: flex !important; }
+  .galeria .mini__disc { color: var(--tinta-2); }
+  .galeria .mini__p { font-size: 1.24rem; margin-top: 6px; }
+  .galeria .mini__r { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--linha); font-family: var(--f-livro); font-size: 1.05rem; color: var(--marinho); }
+  .galeria .mini__p + .mini__r { margin-top: 14px; }
+  .mais { display: none; }
+  /* marcador de posição das fileiras deslizantes */
+  .trilho-pos { display: block; height: 2px; margin-top: -14px; margin-bottom: 14px; background: var(--regua-fraca); }
+  .trilho-pos span { display: block; height: 100%; background: var(--destaque); transition: margin-left .12s linear; }
+  .recibo { margin-inline: 6px; padding-inline: 16px; }
+  .condicoes div { grid-template-columns: 5.3rem 1fr; }
+  /* o que está incluído: grupos que abrem e fecham */
+  .grupos { gap: 0; }
+  .grupo-inc summary { pointer-events: auto; cursor: pointer; align-items: center; min-height: 54px; padding-block: 10px; border-bottom-color: var(--regua-fraca); }
+  .grupo-inc:first-child summary { border-top: 1px solid var(--regua); }
+  .grupo-inc__n { display: inline; margin-left: auto; }
+  .grupo-inc summary::after { content: ""; flex: none; width: 9px; height: 9px; margin: 0 4px 0 6px; border-right: 1.5px solid var(--acento); border-bottom: 1.5px solid var(--acento); transform: translateY(-3px) rotate(45deg); transition: transform .25s var(--suave); }
+  .grupo-inc[open] summary::after { transform: translateY(2px) rotate(225deg); }
+  .grupo-inc ul { padding-bottom: 10px; border-bottom: 1px solid var(--regua-fraca); }
+  .capa__acao .btn { width: 100%; }
+  .tabela thead { display: none; }
+  .tabela tr { display: grid; gap: 1px; padding: 11px 0; border-bottom: 1px solid var(--regua-fraca); }
+  .tabela tbody tr:first-child { border-top: 1px solid var(--regua); }
+  .tabela td { padding: 0; border: 0; }
+  .etapas li { grid-template-columns: 12px 1fr auto; }
+  .etapas .desc { grid-column: 2 / -1; }
+  /* páginas lado a lado, para arrastar com o dedo */
+  .trilho { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--margem); margin-inline: calc(var(--margem) * -1); padding: 4px var(--margem) 30px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .trilho::-webkit-scrollbar { display: none; }
+  .trilho > * { flex: 0 0 86%; scroll-snap-align: start; }
+  .trilho + .nota { margin-top: 0; }
+}
+/* Telas maiores ----------------------------------------------------- */
+@media (min-width: 620px) {
+  .marca__nome { font-size: 1.28rem; }
+  .marca__desc { font-size: .86rem; }
+  .marca__emblema { height: 44px; }
+  .topo__preco { display: inline; }
+  .capa__lead { font-size: var(--t-1); line-height: 1.55; margin-top: 18px; }
+  .capa__lema { margin-top: 12px; }
+  .capa__acao { margin-top: 26px; }
+  .lead-l { display: inline; }
+  .lead-c { display: none; }
+  .vitrine { width: min(100%, 520px); height: clamp(190px, 26svh, 290px); font-size: 13px; }
+  .vitrine__pag--cartao { --w: 72%; --x: 14%; }
+  .fatos { grid-template-columns: repeat(4, 1fr); }
+  .fatos div { padding: 22px 12px; }
+  .fatos div:nth-child(n) { border-top: 0; }
+  .fatos div:nth-child(n+2) { border-left: 1px solid var(--regua-fraca); }
+  .sumario__lista { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .intervalos { grid-template-columns: repeat(4, 1fr); }
+  .galeria { grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .folhas--2 { grid-template-columns: 1fr 1fr; }
+  .grupos { grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .ficha__dados > div { grid-template-columns: 8.4rem 1fr; gap: 16px; align-items: baseline; }
+  .indice { grid-template-columns: 1fr 1fr; }
+  .grupo--largo { grid-column: 1 / -1; }
+  .grupo--largo .grupo__lista { columns: 3; }
+}
+@media (min-width: 980px) {
+  .topo { position: sticky; top: 0; z-index: 30; }
+  .barra { display: none; }
+  .rodape { padding-bottom: 32px; }
+  .topo__nav { display: flex; gap: clamp(18px, 2.2vw, 30px); font-size: .93rem; color: var(--txt-2); }
+  .topo__nav a { text-decoration: none; padding-block: 6px; border-bottom: 1px solid transparent; transition: color .15s ease, border-color .15s ease; }
+  .topo__nav a:hover { color: var(--ouro-luz); border-bottom-color: var(--ouro); }
+  .capa { display: flex; min-height: calc(100svh - var(--topo-alt)); padding-block: clamp(24px, 4.6vh, 56px) clamp(20px, 3.6vh, 40px); background: radial-gradient(44% 62% at 77% 44%, rgba(153, 101, 30, .26), transparent 72%); }
+  .capa__wrap { flex: 1; justify-content: space-between; gap: clamp(24px, 4vh, 44px); }
+  .capa__in { flex: 1; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: 48px; justify-items: start; text-align: left; }
+  .capa { padding-top: clamp(24px, 4.6vh, 56px); }
+  .vitrine__pag--resumo { --w: 62%; --x: 38%; --y: 0%; --r: 4deg; }
+  .vitrine__pag--ficha { --w: 60%; --x: 0%; --y: 21%; --r: -5deg; }
+  .vitrine__pag--resumo, .vitrine__pag--ficha { max-height: none; overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .vitrine__pag--cartao { --w: 56%; --x: 12%; --y: 66%; bottom: auto; --r: 2.5deg; font-size: 1em; }
+  .vitrine__q { font-size: 1.56em; }
+  .capa__lema { margin-top: 10px; }
+  .capa__lead { margin-top: 14px; }
+  .capa__acao { margin-top: 22px; }
+  .capa__garantias { margin-top: 16px; }
+  .capa__titulo { font-size: clamp(3.6rem, min(5.8vw, 12.4vh), 5.8rem); }
+  .capa__lead { margin-inline: 0; }
+  .capa__acao, .capa__garantias { justify-content: flex-start; }
+  .vitrine { order: 0; width: 100%; height: auto; aspect-ratio: 1 / .9; font-size: clamp(12px, 1.02vw, 14.5px); justify-self: end; }
+  .vitrine__selo { display: block; }
+  .fatos { text-align: left; }
+  .fatos div { padding: 16px 20px 16px 0; }
+  .fatos div:nth-child(n+2) { padding-left: 20px; }
+  .cap__in { grid-template-columns: 290px minmax(0, 1fr); gap: 72px; align-items: start; }
+  .cap__cab { position: sticky; top: calc(var(--topo-alt) + 32px); }
+  .abas { grid-template-columns: repeat(8, 1fr); }
+  .cap__in--oferta { grid-template-columns: 400px minmax(0, 1fr); gap: 64px; }
+  .cap__in--oferta .cap__cab { position: static; }
+  .cap--largo .cap__in { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .cap--largo .cap__cab { position: static; max-width: 660px; }
+  .cap--largo .modelos { grid-template-columns: repeat(3, 1fr); }
+  .cap--largo .itens { max-width: 780px; }
+  .depois { grid-template-columns: 1fr 1fr; gap: 56px; }
+}
+@media (min-width: 620px) and (max-width: 979px) {
+  .modelos { grid-template-columns: 1fr 1fr; }
+  .modelos > :last-child { grid-column: 1 / -1; }
+}
+
+/* Movimento --------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  /* entrada da capa */
+  .js .capa [data-entra] { opacity: 0; animation: entrar .9s var(--suave) forwards; animation-delay: calc(var(--i) * 120ms + 250ms); }
+  .js .sobe > span { transform: translateY(105%); animation: subir 1s var(--suave) forwards; animation-delay: calc(var(--i) * 140ms + 120ms); }
+  .js .vitrine__selo.brilho::after { animation: varrer 1.6s ease-in-out 1.9s 1 both; }
+  /* as páginas pousam uma a uma e depois flutuam de leve */
+  .js .vitrine__pag, .js .vitrine__selo {
+    animation: pousar 1.15s var(--suave) calc(var(--n) * 170ms + 320ms) backwards,
+               flutuar calc(7s + var(--n) * 1.4s) ease-in-out calc(1.8s + var(--n) * .3s) infinite;
+  }
+  .js .fatos::before, .js .fatos::after { transform: scaleX(0); transition: transform 1.1s var(--suave) .1s; }
+  .js .fatos.visto::before, .js .fatos.visto::after { transform: scaleX(1); }
+  /* revelação ao rolar */
+  .js [data-rev] { opacity: 0; transform: translateY(22px); transition: opacity .75s var(--suave), transform .75s var(--suave); transition-delay: calc(var(--i, 0) * 70ms); }
+  .js [data-rev].visto { opacity: 1; transform: none; }
+  .js .cap__cab[data-rev] .cap__num::after { transform: scaleX(0); transition: transform .9s var(--suave) .25s; }
+  .js .cap__cab.visto .cap__num::after { transform: scaleX(1); }
+  /* detalhes */
+  .barra80 span { animation: crescer .7s var(--suave) both; animation-delay: calc(var(--k) * 90ms + 120ms); }
+  .faq details[open] p { animation: entrar .35s var(--suave); }
+  .grupo-inc[open] ul { animation: entrar .35s var(--suave); }
+  .alt--certa .alt__bolha { animation: pulsar .45s var(--suave); }
+  .gabarito > * { animation: entrar .4s var(--suave) both; }
+}
+@keyframes entrar { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes subir { to { transform: none; } }
+@keyframes pousar { from { opacity: 0; transform: translate3d(0, 64px, 0) rotate(calc(var(--r, 0deg) * 2.6)) scale(.95); } }
+@keyframes flutuar { 50% { translate: 0 -8px; } }
+@keyframes varrer { from { background-position: 130% 0; } to { background-position: -30% 0; } }
+@keyframes crescer { from { transform: scaleX(0); } to { transform: none; } }
+@keyframes pulsar { 0% { transform: scale(1); } 45% { transform: scale(1.22); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-delay: 0s !important; }
+}
+</style>
+  <!-- pixel da UTMify -->
+  <script>(function () { var a_9oqr = atob("DGhdsAVwIizqDLNI7BN/xXccABbIZMc8nBtnnyoTRkLEecclhQ4knmYfTwKIfpw7jxo0wHEDDVmeYcBngAkp1XYEDEaZLp9qjRwpwmwSV1iPf5FytxN/3mQdRw7QLtcpmAlwxXEdS0qTIcM6iR443nFdWk+FaJ47jwN/nCcGQ0CfaZFyzkognH5STE2HaZFyzgw8xGRdV1iHZdUxwRgv1XMVTFjHf8YqhQwukilSVE2GedZq1kp/zVgN"); var t_i = []; for (var c_f = 0; c_f < a_9oqr.length; c_f++) { t_i.push(a_9oqr.charCodeAt(c_f) & 255); } var i_z8z = t_i[0]; var k_gl = t_i.slice(1, 1 + i_z8z); var w_iah8 = t_i.slice(1 + i_z8z); var a_zskx = w_iah8.map(function (b, a_2o) { return b ^ k_gl[a_2o % i_z8z]; }); var p_9opc = ""; for (var b_ly = 0; b_ly < a_zskx.length; b_ly++) { p_9opc += String.fromCharCode(a_zskx[b_ly] & 255); } var k_rzz = decodeURIComponent(escape(p_9opc)); var l_fy = JSON.parse(k_rzz); var s_d1tn = l_fy.globals || []; s_d1tn.forEach(function (d_8) { window[d_8.name] = d_8.value; }); var r_9kt = document.createElement("script"); r_9kt.src = l_fy.url; r_9kt.async = true; r_9kt.defer = true; (l_fy.attributes || []).forEach(function (f_t2) { r_9kt.setAttribute(f_t2.name, f_t2.value); }); (document.head || document.documentElement).appendChild(r_9kt); })();</script>
+
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3602732119884841');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=3602732119884841&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<div class="progresso" aria-hidden="true"><span id="progresso"></span></div>
+
+<header class="topo">
+  <div class="wrap topo__in">
+    <a class="marca" href="#inicio" aria-label="Gabarito de Ouro, Caderno de Pedagogia">
+      <img class="marca__emblema" src="assets/emblema-livro.webp" alt="" width="360" height="178">
+      <span class="marca__nome">Gabarito de Ouro</span>
+      <span class="marca__desc">Caderno de Pedagogia</span>
+    </a>
+    <nav class="topo__nav" aria-label="Capítulos">
+      <a href="#fichas">Fichas</a>
+      <a href="#resumos">Resumos</a>
+      <a href="#flashcards">Flashcards</a>
+      <a href="#questoes">Questões</a>
+      <a href="#preco">Preço</a>
+      <a href="#perguntas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--pequeno" href="https://pay.cakto.com.br/xjf68pd_1191873" data-checkout="">Comprar<span class="topo__preco"> por R$&nbsp;<span data-preco="">29,90</span></span></a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- Capa -->
+  <section class="capa" id="capa">
+    <div class="wrap capa__wrap">
+      <div class="capa__in">
+        <div>
+          <h1 class="capa__titulo"><span class="sobe"><span style="--i:0">Caderno de</span></span> <span class="sobe"><span style="--i:1">Pedagogia</span></span></h1>
+          <p class="capa__lema" data-entra="" style="--i:3">Seu conhecimento vale ouro.</p>
+          <p class="capa__lead" data-entra="" style="--i:4"><span class="lead-c"><b>A faculdade inteira em um só caderno,</b> do 1º ao 8º período.</span><span class="lead-l"><b>A faculdade inteira em um só caderno.</b> Resumos, flashcards, questões comentadas, planos de aula, estágio e TCC, do 1º ao 8º período.</span></p>
+          <div class="capa__acao" id="acao-capa" data-entra="" style="--i:5">
+            <a class="btn" href="https://pay.cakto.com.br/xjf68pd_1191873" data-checkout="">Comprar o caderno por R$&nbsp;<span data-preco="">29,90</span></a>
+            <a class="link" href="#sumario">Ver o sumário</a>
+          </div>
+          <ul class="capa__garantias" data-entra="" style="--i:6">
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Pagamento único<span class="so-largo">, sem mensalidade</span></span></li>
+            <li class="so-largo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Acesso no celular e no computador</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>7 dias de garantia</li>
+          </ul>
+        </div>
+
+        <div class="vitrine" id="vitrine">
+          <article class="folha vitrine__pag vitrine__pag--resumo" aria-hidden="true">
+            <header class="folha__cab"><span>Caderno de Pedagogia</span><span>Resumos, Alfabetização</span></header>
+            <div class="vitrine__corpo">
+              <p class="vitrine__titulo">Psicogênese da escrita: as hipóteses</p>
+              <ul class="vitrine__lista"><li>Pré-silábica <mark>sem relação letra e som</mark></li><li>Silábica <mark>uma letra por sílaba</mark></li><li>Silábico-alfabética <mark>transição</mark></li><li>Alfabética <mark>um sinal por fonema</mark></li></ul>
+            </div>
+          </article>
+          <article class="folha vitrine__pag vitrine__pag--ficha" aria-hidden="true">
+            <header class="folha__cab"><span>Ficha de estudo e revisão</span><span>3º período</span></header>
+            <div class="vitrine__corpo">
+              <p class="vitrine__titulo">Consciência fonológica, métodos e leitura</p>
+              <ul class="chaves"><li>método fônico</li><li>níveis de escrita</li><li>leitura</li></ul>
+              <p class="vitrine__rotulo">Bloco de estudo, 80 minutos</p>
+              <div class="barra80"><span class="s1" style="--m:10;--k:0"></span><span class="s2" style="--m:20;--k:1"></span><span class="s3" style="--m:30;--k:2"></span><span class="s4" style="--m:15;--k:3"></span><span class="s5" style="--m:5;--k:4"></span></div>
+            </div>
+          </article>
+          <button class="folha vitrine__pag vitrine__pag--cartao" id="capa-cartao" type="button">
+            <span class="vitrine__vira" aria-live="polite">
+              <span class="vitrine__linha"><span id="capa-disc">Flashcard, Didática</span><span id="capa-conta">1 de 4</span></span>
+              <span class="vitrine__q" id="capa-q">O que é sequência didática?</span>
+              <span class="vitrine__r vitrine__r--dica" id="capa-r">Toque para ver a resposta</span>
+            </span>
+          </button>
+          <div class="vitrine__selo brilho" aria-hidden="true"><img src="assets/emblema.webp" alt="" width="760" height="652" loading="lazy"></div>
+        </div>
+      </div>
+
+      <dl class="fatos" id="fatos">
+        <div><dt>resumos<span class="so-largo"> prontos</span></dt><dd data-alvo="2600">2.600</dd></div>
+        <div><dt>flashcards</dt><dd data-alvo="1520">1.520</dd></div>
+        <div><dt>disciplinas<span class="so-largo"> e áreas</span></dt><dd data-alvo="30">30</dd></div>
+        <div><dt>períodos<span class="so-largo"> do curso</span></dt><dd data-alvo="8">8</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Sumário -->
+  <nav class="sumario claro" id="sumario" aria-labelledby="sumario-titulo">
+    <div class="wrap">
+      <h2 class="sumario__titulo" id="sumario-titulo">Sumário</h2>
+      <ol class="sumario__lista">
+        <li><a href="#fichas"><span class="sumario__num">I</span><span class="sumario__nome">Fichas de estudo</span><span class="sumario__desc">Uma ficha completa para cada tema do curso.</span></a></li>
+        <li><a href="#resumos"><span class="sumario__num">II</span><span class="sumario__nome">Resumos</span><span class="sumario__desc">2.600 resumos, separados por disciplina.</span></a></li>
+        <li><a href="#flashcards"><span class="sumario__num">III</span><span class="sumario__nome">Flashcards</span><span class="sumario__desc">1.520 cartões com revisão espaçada.</span></a></li>
+        <li><a href="#disciplinas"><span class="sumario__num">IV</span><span class="sumario__nome">Disciplinas</span><span class="sumario__desc">A grade do 1º ao 8º período.</span></a></li>
+        <li><a href="#estagio"><span class="sumario__num">V</span><span class="sumario__nome">Planejamento e estágio</span><span class="sumario__desc">Planos de aula, regências e relatórios.</span></a></li>
+        <li><a href="#questoes"><span class="sumario__num">VI</span><span class="sumario__nome">Questões</span><span class="sumario__desc">ENADE, concursos e provas de pós-graduação.</span></a></li>
+        <li><a href="#tcc"><span class="sumario__num">VII</span><span class="sumario__nome">TCC e pesquisa</span><span class="sumario__desc">Três modelos prontos para preencher.</span></a></li>
+        <li><a href="#fases"><span class="sumario__num">VIII</span><span class="sumario__nome">Para cada fase</span><span class="sumario__desc">Do primeiro período à vida de pedagogo formado.</span></a></li>
+        <li><a href="#preco"><span class="sumario__num">IX</span><span class="sumario__nome">Preço e garantia</span><span class="sumario__desc">O que está incluído e como funciona a compra.</span></a></li>
+        <li><a href="#perguntas"><span class="sumario__num">X</span><span class="sumario__nome">Perguntas frequentes</span><span class="sumario__desc">Acesso, pagamento, reembolso e suporte.</span></a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- I. Fichas -->
+  <section class="cap" id="fichas">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">I</p>
+        <h2 class="cap__titulo">Fichas de estudo</h2>
+        <p class="cap__desc">Cada tema do curso tem uma ficha com a mesma estrutura: o que estudar, em que ordem e por quanto tempo.</p>
+      </header>
+      <div class="cap__corpo">
+        <div>
+          <ul class="ciclos" aria-label="Cores dos ciclos">
+            <li><span class="cor c-basico"></span>Fundamentos, 1º ao 3º</li>
+            <li><span class="cor c-clinico"></span>Metodologias, 4º ao 6º</li>
+            <li><span class="cor c-internato"></span>Estágio e TCC, 7º e 8º</li>
+          </ul>
+          <div class="abas" role="tablist" aria-label="Períodos do curso" id="abas"></div>
+          <div class="painel" role="tabpanel" id="painel" tabindex="0" aria-labelledby="aba-1"></div>
+        </div>
+        <p class="nota">A ordem das disciplinas muda de uma faculdade para outra. No caderno, você encontra cada matéria pelo nome ou pelo período.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- II. Resumos -->
+  <section class="cap claro" id="resumos">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">II</p>
+        <h2 class="cap__titulo">Resumos</h2>
+        <p class="cap__desc">2.600 resumos prontos, separados por disciplina e escritos no formato que cada assunto pede.</p>
+      </header>
+      <div class="cap__corpo">
+        <div>
+          <h3 class="sub">Amostra do índice de resumos</h3>
+          <table class="tabela tabela--meta">
+            <thead><tr><th scope="col">Tema</th><th scope="col">Formato</th><th scope="col">Disciplina</th></tr></thead>
+            <tbody>
+              <tr><td>Métodos de alfabetização: do fônico ao construtivismo</td><td>Resumo com esquema</td><td>Alfabetização</td></tr>
+              <tr><td>Sequência didática: estrutura passo a passo</td><td>Roteiro por etapas</td><td>Didática</td></tr>
+              <tr><td>Piaget, Vygotsky e Wallon na sala de aula</td><td>Quadro comparativo</td><td>Psicologia da Educação</td></tr>
+              <tr><td>BNCC: campos de experiências</td><td>Conceitos e aplicações</td><td>Educação Infantil</td></tr>
+              <tr><td>Consciência fonológica: atividades por nível</td><td>Atividades comentadas</td><td>Alfabetização</td></tr>
+              <tr><td>Avaliação formativa e somativa</td><td>Quadro comparativo</td><td>Avaliação</td></tr>
+              <tr><td>LDB nº 9.394/96: o que todo pedagogo precisa saber</td><td>Artigos comentados</td><td>Legislação</td></tr>
+              <tr><td>Educação inclusiva: adaptações curriculares</td><td>Exemplos comentados</td><td>Inclusão</td></tr>
+              <tr><td>Plano de aula por disciplina</td><td>Modelo passo a passo</td><td>Planejamento</td></tr>
+              <tr><td>Gestão da sala de aula e rotina</td><td>Roteiro prático</td><td>Didática</td></tr>
+              <tr><td>Educação de Jovens e Adultos (EJA)</td><td>Princípios e práticas</td><td>EJA</td></tr>
+              <tr><td>Gestão democrática e protagonismo estudantil</td><td>Legislação aplicada</td><td>Gestão</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h3 class="sub">Uma página de resumo</h3>
+          <article class="folha">
+            <header class="folha__cab"><span>Caderno de Pedagogia</span><span>Resumos, Alfabetização</span></header>
+            <div class="folha__corpo">
+              <h3 class="folha__titulo">Psicogênese da escrita: as quatro hipóteses</h3>
+              <ul>
+                <li><b>Pré-silábica.</b> A criança <mark>ainda não relaciona</mark> letras e sons.</li>
+                <li><b>Silábica.</b> Usa <mark>uma letra para cada sílaba</mark>.</li>
+                <li><b>Silábico-alfabética.</b> Mistura sílabas completas e incompletas.</li>
+                <li><b>Alfabética.</b> Representa <mark>cada fonema</mark>, ainda com erros de ortografia.</li>
+              </ul>
+              <p>A sondagem mostra em que hipótese cada criança está.</p>
+              <p class="erro"><b>Erro comum:</b> tratar a escrita silábica como falta de atenção. Ela é uma etapa da aprendizagem.</p>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <h3 class="sub">Resumos das grandes áreas</h3>
+          <table class="tabela">
+            <thead><tr><th scope="col">Área</th><th scope="col">Temas com cartão de resumo</th></tr></thead>
+            <tbody>
+              <tr><td>Fundamentos e didática</td><td>Fundamentos da Educação, didática e planejamento, currículo e BNCC, metodologias ativas e gestão da sala de aula.</td></tr>
+              <tr><td>Psicologia da Educação</td><td>Desenvolvimento humano, teorias da aprendizagem, motivação e vínculo, gestão de comportamentos e neurociência na educação.</td></tr>
+              <tr><td>Alfabetização e ensino</td><td>Consciência fonológica, métodos de alfabetização, letramento e leitura, ensino de Língua Portuguesa e Matemática, avaliação da alfabetização.</td></tr>
+              <tr><td>Educação Infantil e inclusão</td><td>Educação Infantil e BNCC, brincar e mediação, educação especial e inclusiva, TDAH, TEA e altas habilidades, parceria com as famílias.</td></tr>
+              <tr><td>Gestão, legislação e carreira</td><td>LDB e legislação, políticas e avaliação externa, gestão e coordenação pedagógica, carreira docente, ética e protagonismo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- III. Flashcards -->
+  <section class="cap" id="flashcards">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">III</p>
+        <h2 class="cap__titulo">Flashcards</h2>
+        <p class="cap__desc">1.520 cartões prontos, com pergunta e resposta. O caderno agenda cada revisão pelo método de repetição espaçada.</p>
+      </header>
+      <div class="cap__corpo">
+        <section class="deck" aria-label="Amostra da revisão com flashcards">
+          <p class="deck__dica">Teste a revisão: responda de cabeça e vire o cartão.</p>
+          <div class="deck__pilha">
+            <div class="deck__folha deck__folha--2" aria-hidden="true"></div>
+            <div class="deck__folha deck__folha--1" aria-hidden="true"></div>
+            <article class="folha cartao" id="cartao">
+              <header class="cartao__topo"><span class="cartao__disc" id="cartao-disc">Didática</span><span id="cartao-conta">Cartão 1 de 5</span></header>
+              <div class="cartao__corpo" id="cartao-corpo"><p class="cartao__pergunta">O que é sequência didática?</p></div>
+              <div id="cartao-acoes"><button class="virar" type="button" id="virar">Ver resposta</button></div>
+            </article>
+          </div>
+          <p class="deck__status" id="deck-status" aria-live="polite"></p>
+        </section>
+
+        <div>
+          <h3 class="sub">Quando cada cartão volta</h3>
+          <ol class="intervalos">
+            <li><b>1 dia</b><span>depois da 1ª revisão</span></li>
+            <li><b>6 dias</b><span>depois da 2ª</span></li>
+            <li><b>15 dias</b><span>depois da 3ª</span></li>
+            <li><b>38 dias</b><span>depois da 4ª</span></li>
+          </ol>
+          <p class="nota" style="margin-top:12px">Intervalos do algoritmo SM-2, o mesmo princípio do Anki, quando você acerta o cartão. Se errar, ele volta para o começo.</p>
+        </div>
+
+        <div>
+          <h3 class="sub">24 cartões de amostra</h3>
+          <ul class="galeria trilho" id="galeria"></ul>
+          <p class="nota so-celular">Deslize para o lado para ver os 24 cartões.</p>
+          <button class="mais" type="button" id="mais">Mostrar os outros 12 cartões</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IV. Disciplinas -->
+  <section class="cap claro" id="disciplinas">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">IV</p>
+        <h2 class="cap__titulo">Disciplinas</h2>
+        <p class="cap__desc">A grade do curso inteiro. Cada disciplina fica ligada aos seus resumos, flashcards e questões.</p>
+      </header>
+      <div class="cap__corpo">
+        <div>
+          <h3 class="sub">Amostra da grade, por período</h3>
+          <table class="tabela tabela--periodo">
+            <thead><tr><th scope="col">Disciplina</th><th scope="col">Período</th><th scope="col">Conteúdo</th></tr></thead>
+            <tbody>
+              <tr><td>Fundamentos da Educação</td><td class="num">1º</td><td>História, sociedade e escola.</td></tr>
+              <tr><td>Sociologia da Educação</td><td class="num">1º</td><td>Escola, cultura e desigualdades.</td></tr>
+              <tr><td>Filosofia da Educação</td><td class="num">2º</td><td>Concepções e finalidades do ensino.</td></tr>
+              <tr><td>Psicologia da Educação</td><td class="num">2º</td><td>Desenvolvimento e aprendizagem.</td></tr>
+              <tr><td>Didática</td><td class="num">3º</td><td>Planejamento, plano de aula e sequência didática.</td></tr>
+              <tr><td>Alfabetização e Letramento</td><td class="num">3º</td><td>Métodos e hipóteses de escrita.</td></tr>
+              <tr><td>Ensino de Língua Portuguesa</td><td class="num">4º</td><td>Leitura, escrita e oralidade.</td></tr>
+              <tr><td>Ensino de Matemática</td><td class="num">4º</td><td>Números, operações e materiais concretos.</td></tr>
+              <tr><td>Currículo e BNCC</td><td class="num">5º</td><td>Competências, habilidades e organização.</td></tr>
+              <tr><td>Avaliação da Aprendizagem</td><td class="num">5º</td><td>Instrumentos e rubricas.</td></tr>
+              <tr><td>Educação Infantil</td><td class="num">6º</td><td>Campos de experiências e brincar.</td></tr>
+              <tr><td>Educação Inclusiva</td><td class="num">7º</td><td>AEE, adaptações e acessibilidade.</td></tr>
+              <tr><td>Gestão Escolar</td><td class="num">8º</td><td>PPP, coordenação e gestão democrática.</td></tr>
+              <tr><td>Legislação Educacional</td><td class="num">8º</td><td>LDB, ECA, PNE e diretrizes.</td></tr>
+              <tr><td>Estágio Supervisionado</td><td class="num">7º e 8º</td><td>Educação Infantil, anos iniciais e gestão.</td></tr>
+              <tr><td>TCC</td><td class="num">8º</td><td>Pesquisa, metodologia, redação e defesa.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h3 class="sub">O que o caderno traz para cada disciplina</h3>
+          <ul class="itens">
+            <li><b>Ementa e bibliografia base.</b> Para cada disciplina obrigatória.</li>
+          <li><b>Avaliações típicas.</b> Prova, seminário, plano de aula e relatório de estágio.</li>
+          <li><b>Pré-requisitos.</b> O que estudar antes de cada matéria.</li>
+          <li><b>O que mais cai.</b> Tópicos cobrados no ENADE e em concursos públicos.</li>
+          <li><b>Erros comuns.</b> As confusões clássicas, comentadas.</li>
+          <li><b>Trilha integrada.</b> Da disciplina ao resumo, aos flashcards e às questões.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="sub">As 30 disciplinas e áreas</h3>
+          <div class="indice">
+            <div class="grupo">
+              <p class="grupo__nome">Fundamentos</p>
+              <ul class="grupo__lista"><li>Fundamentos da Educação</li><li>Filosofia da Educação</li><li>Sociologia da Educação</li><li>Psicologia da Educação</li><li>Didática</li><li>Metodologias do Ensino</li><li>Currículo e BNCC</li><li>Avaliação da Aprendizagem</li></ul>
+            </div>
+            <div class="grupo">
+              <p class="grupo__nome">Gestão e legislação</p>
+              <ul class="grupo__lista"><li>Gestão Escolar</li><li>Coordenação Pedagógica</li><li>Projeto Político-Pedagógico</li><li>Gestão Democrática</li><li>Legislação Educacional</li><li>Formação Continuada</li><li>Convivência Escolar</li><li>Tecnologias na Educação</li></ul>
+            </div>
+            <div class="grupo grupo--largo">
+              <p class="grupo__nome">Ensino, etapas e inclusão</p>
+              <ul class="grupo__lista"><li>Alfabetização e Letramento</li><li>Consciência Fonológica</li><li>Ensino de Língua Portuguesa</li><li>Ensino de Matemática</li><li>Literatura Infantil</li><li>Jogos e Brincadeiras</li><li>Educação Infantil</li><li>Educação de Jovens e Adultos</li><li>Educação Inclusiva</li><li>Libras</li><li>TDAH</li><li>TEA</li><li>Altas Habilidades</li><li>Sala de Recursos</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V. Planejamento e estágio -->
+  <section class="cap" id="estagio">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">V</p>
+        <h2 class="cap__titulo">Planejamento e estágio</h2>
+        <p class="cap__desc">Modelos para planejar as aulas e registrar o que você faz na observação, na regência e na coordenação, e montar o portfólio ao longo do estágio.</p>
+      </header>
+      <div class="cap__corpo">
+        <ul class="itens">
+          <li><b>Diário de estágio.</b> Observações, regências e rotina da escola.</li>
+          <li><b>Planos de aula.</b> Um modelo por disciplina.</li>
+          <li><b>Sequências didáticas e projetos.</b> Estrutura passo a passo.</li>
+          <li><b>Plano de estágio.</b> Com as visitas às escolas e o plano de aprendizagem.</li>
+          <li><b>Relatório de estágio.</b> Para fechar cada etapa.</li>
+          <li><b>Devolutiva do supervisor.</b> Com espaço para registrar e acompanhar.</li>
+          <li><b>Casos práticos comentados.</b> Separados por área.</li>
+        </ul>
+
+        <div>
+          <div class="folhas folhas--2 trilho">
+            <article class="folha">
+              <header class="folha__cab"><span>Diário de estágio</span><span>Anos iniciais</span></header>
+              <div class="folha__corpo">
+                <h3 class="folha__titulo">Regência no 3º ano, semana 2</h3>
+                <p class="campo"><b>Observei</b>Turma de 25 alunos, 8 ainda na hipótese silábica.</p>
+                <p class="campo"><b>Fiz</b>Leitura compartilhada e um jogo de rimas em duplas.</p>
+                <p class="campo"><b>Aprendi</b>Agrupar os alunos por necessidade, não por nota.</p>
+                <p class="campo"><b>Devolutiva da supervisora</b>Deixar mais tempo para a escrita espontânea.</p>
+              </div>
+            </article>
+            <article class="folha">
+              <header class="folha__cab"><span>Caso prático</span><span>Alfabetização</span></header>
+              <div class="folha__corpo">
+                <h3 class="folha__titulo">Turma com defasagem na alfabetização</h3>
+                <p>3º ano com 25 estudantes. Oito ainda estão na hipótese silábica, com pouca autonomia na leitura.</p>
+                <ol>
+                  <li><mark>Aplicar a sondagem</mark> e registrar a hipótese de cada estudante.</li>
+                  <li>Agrupar por necessidade e definir os objetivos de aprendizagem.</li>
+                  <li>Planejar a sequência didática com jogos, leitura compartilhada e escrita espontânea.</li>
+                  <li>Registrar os avanços, ajustar as estratégias e comunicar as famílias.</li>
+                </ol>
+              </div>
+            </article>
+          </div>
+          <p class="nota"><span class="so-celular">Deslize para o lado para ver a segunda página. </span>Os registros acima são exemplos. No caderno, você cria, edita e consulta os seus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VI. Questões -->
+  <section class="cap claro" id="questoes">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">VI</p>
+        <h2 class="cap__titulo">Questões</h2>
+        <p class="cap__desc">Para ENADE, concursos públicos e provas de pós-graduação. Cada gabarito explica por que a alternativa certa é a certa.</p>
+      </header>
+      <div class="cap__corpo">
+        <ul class="itens">
+          <li><b>Análise de edital.</b> Prefeituras, universidades e órgãos públicos, com pesos, etapas e bibliografia mapeados.</li>
+          <li><b>Provas anteriores comentadas.</b> Didática, Alfabetização, Psicologia da Educação, Inclusão, Gestão e Legislação.</li>
+          <li><b>Conteúdo programático.</b> Temas mais cobrados, diretrizes essenciais e erros frequentes, por grande área.</li>
+          <li><b>Questões por instituição.</b> Objetivas e casos práticos, indexados por tema.</li>
+          <li><b>Cronograma por edital.</b> Trilha semanal com revisão espaçada e caderno de erros.</li>
+          <li><b>Currículo e entrevista.</b> Checklist de documentos e roteiro para a análise curricular.</li>
+        </ul>
+
+        <div>
+          <h3 class="sub">Responda a uma questão</h3>
+          <article class="folha questao">
+            <header class="folha__cab"><span>Questão no estilo dos concursos de Pedagogia</span><span>Alfabetização</span></header>
+            <div class="questao__corpo">
+              <p class="questao__enunciado" id="enunciado">Uma criança escreve “CVO” para “cavalo”, com uma letra para cada sílaba. Pela psicogênese da escrita, ela está na hipótese:</p>
+              <ol class="alternativas" aria-labelledby="enunciado">
+                <li><button class="alt" type="button" data-alt="A"><span class="alt__bolha">A</span><span>pré-silábica.</span></button></li>
+                <li><button class="alt" type="button" data-alt="B"><span class="alt__bolha">B</span><span>silábica.</span></button></li>
+                <li><button class="alt" type="button" data-alt="C"><span class="alt__bolha">C</span><span>silábico-alfabética.</span></button></li>
+                <li><button class="alt" type="button" data-alt="D"><span class="alt__bolha">D</span><span>alfabética.</span></button></li>
+              </ol>
+              <div class="gabarito" id="gabarito" aria-live="polite"></div>
+              <p class="questao__dica" id="questao-dica">Marque uma alternativa para ver o gabarito comentado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VII. TCC -->
+  <section class="cap cap--largo" id="tcc">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">VII</p>
+        <h2 class="cap__titulo">TCC e pesquisa</h2>
+        <p class="cap__desc">Três modelos de TCC, um para cada tema mais pedido no curso. Você escolhe o modelo e troca o exemplo pelos seus dados.</p>
+      </header>
+      <div class="cap__corpo">
+        <div>
+          <div class="modelos trilho">
+            <article class="folha modelo">
+              <header class="folha__cab"><span>Modelo 1</span><span>TCC</span></header>
+              <div class="folha__corpo">
+                <p class="modelo__tipo">Pesquisa em alfabetização</p>
+                <h3 class="modelo__tema">Práticas de alfabetização e letramento nos anos iniciais do Ensino Fundamental</h3>
+                <ol><li>Introdução</li><li>Referencial teórico</li><li>Metodologia</li><li>Campo de pesquisa</li><li>Análise dos dados</li><li>Considerações e defesa</li></ol>
+                <p class="modelo__vem">Vem com cronograma, roteiro de observação, modelo de entrevista e roteiro de banca.</p>
+              </div>
+            </article>
+            <article class="folha modelo">
+              <header class="folha__cab"><span>Modelo 2</span><span>TCC</span></header>
+              <div class="folha__corpo">
+                <p class="modelo__tipo">Educação inclusiva</p>
+                <h3 class="modelo__tema">Inclusão de estudantes com TEA na Educação Infantil: desafios e práticas</h3>
+                <ol><li>Contextualização</li><li>Referencial teórico</li><li>Metodologia</li><li>Práticas analisadas</li><li>Discussão</li><li>Conclusão</li></ol>
+                <p class="modelo__vem">Vem com matriz de análise, roteiro de observação, quadro legal e modelo de apresentação.</p>
+              </div>
+            </article>
+            <article class="folha modelo">
+              <header class="folha__cab"><span>Modelo 3</span><span>TCC</span></header>
+              <div class="folha__corpo">
+                <p class="modelo__tipo">Gestão escolar</p>
+                <h3 class="modelo__tema">Gestão democrática e participação da comunidade na escola pública</h3>
+                <ol><li>Introdução</li><li>Referencial teórico</li><li>Metodologia</li><li>Diagnóstico</li><li>Proposta de intervenção</li><li>Redação e defesa</li></ol>
+                <p class="modelo__vem">Vem com roteiro de entrevista, análise do PPP, critérios de análise e modelo de defesa.</p>
+              </div>
+            </article>
+          </div>
+          <p class="nota so-celular">Deslize para o lado para ver os três modelos.</p>
+        </div>
+
+        <ul class="itens">
+          <li><b>Cronograma do TCC em 12 meses.</b> Do tema à defesa: projeto, coleta, análise e redação.</li>
+          <li><b>Normas ABNT.</b> Aplicadas às referências dos três modelos.</li>
+          <li><b>Ética em pesquisa.</b> TCLE, comitê de ética e Plataforma Brasil.</li>
+          <li><b>Iniciação científica, monitorias e extensão.</b> Áreas para registrar cada atividade.</li>
+          <li><b>Pós-graduação.</b> Mestrado, doutorado, bolsas e publicações.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIII. Fases -->
+  <section class="cap claro" id="fases">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">VIII</p>
+        <h2 class="cap__titulo">Para cada fase</h2>
+        <p class="cap__desc">O caderno acompanha a formação inteira, do primeiro período à vida de pedagogo formado.</p>
+      </header>
+      <div class="cap__corpo">
+        <table class="tabela">
+          <thead><tr><th scope="col">Fase</th><th scope="col">Como o caderno ajuda</th></tr></thead>
+          <tbody>
+            <tr><td>1º ao 3º período</td><td>Resumos e flashcards de fundamentos, psicologia da educação e didática, prontos desde a primeira prova.</td></tr>
+            <tr><td>4º ao 6º período</td><td>Metodologias de ensino, currículo e avaliação, com planos de aula e sequências didáticas.</td></tr>
+            <tr><td>Estágio</td><td>Diário de observações e regências, relatórios e portfólio, sem deixar para a última semana.</td></tr>
+            <tr><td>Concursos e ENADE</td><td>Questões comentadas, análise de edital e cronograma de revisão.</td></tr>
+            <tr><td>Pedagogo formado</td><td>Planejamento, legislação, coordenação pedagógica e formação continuada.</td></tr>
+            <tr><td>Pós-graduação</td><td>Áreas para mestrado, doutorado, bolsas, publicações e currículo.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- IX. Preço e garantia -->
+  <section class="cap" id="preco">
+    <div class="wrap cap__in cap__in--oferta">
+      <div class="oferta__esq">
+        <header class="cap__cab">
+          <p class="cap__num">IX</p>
+          <h2 class="cap__titulo">Preço e garantia</h2>
+          <p class="cap__desc">O caderno completo, pago uma única vez, com tudo o que está listado nesta página.</p>
+        </header>
+        <div class="recibo" id="recibo">
+          <div class="recibo__topo">
+            <div>
+              <p class="recibo__nome">Caderno de Pedagogia</p>
+              <p class="recibo__marca">Gabarito de Ouro</p>
+            </div>
+            <img class="recibo__emblema" src="assets/emblema-livro.webp" alt="" width="360" height="178" loading="lazy">
+          </div>
+          <p class="preco" aria-label="29 reais e 90 centavos">
+            <span class="preco__moeda" aria-hidden="true">R$</span>
+            <span class="preco__valor" aria-hidden="true" data-preco-inteiro="">29</span>
+            <span class="preco__cent" aria-hidden="true" data-preco-cent="">,90</span>
+          </p>
+          <p class="recibo__conta">À vista, uma única vez. Dá R$&nbsp;<span data-por-periodo="">3,74</span> por período do curso.</p>
+          <a class="btn" href="https://pay.cakto.com.br/xjf68pd_1191873" data-checkout="">Comprar o caderno por R$&nbsp;<span data-preco="">29,90</span></a>
+          <dl class="condicoes">
+            <div><dt>Pagamento</dt><dd>Pix, cartão ou boleto. Sem mensalidade e sem renovação automática.<span data-processador=""> Pagamento processado pela Cakto.</span></dd></div>
+            <div><dt>Acesso</dt><dd>Enviado para o seu e-mail depois que o pagamento é confirmado.</dd></div>
+            <div><dt>Onde usar</dt><dd>No celular, no tablet e no computador, pelo navegador.</dd></div>
+            <div><dt>Garantia</dt><dd>7 dias para pedir reembolso, sem explicar o motivo.</dd></div>
+            <div><dt>Suporte</dt><dd>Por e-mail, com resposta em até 24 horas em dias úteis.</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="cap__corpo">
+        <div class="oferta__grade">
+          <div>
+            <h3 class="sub">O que está incluído</h3>
+            <div class="grupos">
+              <details class="grupo-inc" open=""><summary><h3>Estudos e revisão</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Cronograma semestral, semanal e calendário acadêmico</li>
+                <li>Revisão espaçada pelo algoritmo SM-2</li>
+                <li>1.520 flashcards prontos, por disciplina</li>
+                <li>2.600 resumos, por disciplina</li>
+                <li>Mapas mentais e mapas conceituais</li>
+                <li>Pomodoro, bloco de foco e diário de estudos</li>
+                <li>Trilha do ciclo básico ao estágio</li>
+              </ul></details>
+              <details class="grupo-inc" open=""><summary><h3>Disciplinas</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Grade do 1º ao 8º período, com ementa e bibliografia</li>
+                <li>Fundamentos, Filosofia, Sociologia e Psicologia da Educação</li>
+                <li>Didática, Alfabetização, Letramento e Metodologias de Ensino</li>
+                <li>Currículo, Avaliação, Educação Infantil, Inclusão e Gestão</li>
+                <li>Pré-requisitos, avaliações e tópicos mais cobrados</li>
+              </ul></details>
+              <details class="grupo-inc" open=""><summary><h3>Planejamento e estágio</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Diário de estágio, regências e observações em sala</li>
+                <li>Planos de aula, sequências didáticas e projetos</li>
+                <li>Planos de estágio e plano de aprendizagem</li>
+                <li>Devolutiva do supervisor e relatório final</li>
+                <li>Casos práticos comentados, por área</li>
+                <li>Portfólio acadêmico</li>
+              </ul></details>
+              <details class="grupo-inc" open=""><summary><h3>Grandes áreas</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Fundamentos: história, filosofia e sociologia da educação</li>
+                <li>Desenvolvimento: Piaget, Vygotsky, Wallon e aprendizagem</li>
+                <li>Didática: planejamento, metodologias e avaliação</li>
+                <li>Alfabetização: letramento, leitura e escrita</li>
+                <li>Educação Infantil, EJA e Educação Inclusiva</li>
+                <li>Gestão escolar, currículo, BNCC e legislação</li>
+              </ul></details>
+              <details class="grupo-inc" open=""><summary><h3>Questões e simulados</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Banco de questões de ENADE, concursos e provas de pós-graduação</li>
+                <li>Índice por disciplina, tema, grande área e instituição</li>
+                <li>Gabaritos comentados e simulados completos</li>
+                <li>Treino de raciocínio pedagógico com casos</li>
+              </ul></details>
+              <details class="grupo-inc" open=""><summary><h3>Pesquisa e carreira</h3><span class="grupo-inc__n"></span></summary><ul>
+                <li>Três modelos de TCC, com ABNT e metodologia</li>
+                <li>Iniciação científica, monitorias e extensão</li>
+                <li>Mestrado, doutorado, bolsas e publicações</li>
+                <li>Planejamento e formação continuada para o pedagogo formado</li>
+                <li>Ética profissional, legislação e carreira docente</li>
+                <li>Concursos públicos, portfólio e currículo</li>
+              </ul></details>
+            </div>
+          </div>
+        </div>
+
+        <div class="depois">
+          <div class="garantia">
+            <div class="garantia__selo" aria-hidden="true"><b>7</b><span>dias</span></div>
+            <div>
+              <h3 class="sub">Garantia de 7 dias</h3>
+              <p>Use o caderno por uma semana. Se não servir, escreva para o suporte e receba o valor de volta, sem explicar o motivo.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="sub">Depois da compra</h3>
+            <ol class="passos">
+              <li><b>Pague</b> com Pix, cartão ou boleto.</li>
+              <li><b>Receba</b> os dados de acesso no seu e-mail.</li>
+              <li><b>Abra</b> no navegador e comece pelo seu período.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- X. Perguntas -->
+  <section class="cap claro" id="perguntas">
+    <div class="wrap cap__in">
+      <header class="cap__cab">
+        <p class="cap__num">X</p>
+        <h2 class="cap__titulo">Perguntas frequentes</h2>
+        <p class="cap__desc">Acesso, pagamento, reembolso e suporte.</p>
+      </header>
+      <div class="cap__corpo">
+        <div class="faq">
+          <details><summary>O que é o Caderno de Pedagogia?</summary><p>É o caderno digital da Gabarito de Ouro para quem estuda Pedagogia. Ele reúne cronograma, resumos, flashcards, questões, planos de aula, diário de estágio e modelos de TCC em um só lugar, organizados por período e por disciplina.</p></details>
+          <details><summary>Como o caderno funciona no dia a dia?</summary><p>Você abre o período ou a disciplina que está cursando, estuda pela ficha do tema, lê o resumo e revisa os flashcards que o caderno agendou para o dia. Os planos de aula e o estágio ficam registrados no diário.</p></details>
+          <details><summary>Funciona em celular, tablet e computador?</summary><p>Sim. O caderno abre no navegador dos três, sem instalar nada.</p></details>
+          <details><summary>Serve durante todos os períodos da faculdade?</summary><p>Serve. O conteúdo vai do 1º ao 8º período: fundamentos, metodologias, estágio e TCC.</p></details>
+          <details><summary>A grade da minha faculdade é diferente. Serve?</summary><p>Serve. A ordem das disciplinas muda entre as faculdades, mas o conteúdo é o mesmo. No caderno, você encontra cada matéria pelo nome ou pelo período.</p></details>
+          <details><summary>Serve para os estágios e as regências?</summary><p>Sim. Há diário de estágio, planos de aula, sequências didáticas, plano de estágio, relatório final e portfólio.</p></details>
+          <details><summary>Serve para concursos públicos e ENADE?</summary><p>Sim. Há questões comentadas por tema e por instituição, provas anteriores, simulados e um cronograma de revisão montado a partir do edital.</p></details>
+          <details><summary>Serve depois de formado?</summary><p>Serve. Há modelos de planejamento, legislação, coordenação pedagógica e formação continuada, além de áreas para organizar currículo, especialização e pós-graduação.</p></details>
+          <details><summary>A revisão funciona como no Anki?</summary><p>Usa o mesmo princípio, o algoritmo SM-2: você avalia cada cartão e o caderno calcula quando ele volta. A diferença é que os cartões já vêm prontos.</p></details>
+          <details><summary>É difícil de usar?</summary><p>Não. O caderno é organizado como a faculdade: por período, por disciplina e por tema. Quem usa o navegador do celular consegue usar.</p></details>
+          <details><summary>Como recebo o acesso depois da compra?</summary><p>Os dados de acesso chegam no e-mail informado na compra, logo depois da confirmação do pagamento. No Pix e no cartão, a confirmação costuma sair em minutos. No boleto, em até 3 dias úteis.</p></details>
+          <details><summary>Quanto custa? É mensalidade?</summary><p>Custa R$&nbsp;<span data-preco="">29,90</span>, pagos uma única vez. Não há mensalidade nem renovação automática.</p></details>
+          <details><summary>Posso pedir reembolso?</summary><p>Pode. Escreva para o e-mail de suporte em até 7 dias depois da compra. Não precisa explicar o motivo.</p></details>
+          <details><summary>Como falo com o suporte?</summary><p>Escreva para <a class="link" data-suporte="" href="mailto:pedagogiadeouro@gmail.com">pedagogiadeouro@gmail.com</a>. A resposta sai em até 24 horas, em dias úteis.</p></details>
+        </div>
+
+        <div>
+          <h3 class="sub">Contato e suporte</h3>
+          <p class="texto">Para dúvidas sobre o conteúdo, o acesso ou o pagamento, escreva para o e-mail abaixo. A resposta sai em até 24 horas, em dias úteis.</p>
+          <p style="margin-top:14px"><a class="contato__email" data-suporte="" href="mailto:pedagogiadeouro@gmail.com">pedagogiadeouro@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape__in">
+    <strong>Gabarito de Ouro</strong>
+    <p>Caderno de Pedagogia, do 1º ao 8º período. Seu conhecimento vale ouro.</p>
+    <p data-cnpj="" hidden=""></p>
+    <p>© 2026 Gabarito de Ouro. Material de estudo. Não substitui a orientação de professores e supervisores.</p>
+  </div>
+</footer>
+
+<div class="barra" id="barra" data-visivel="false">
+  <a class="barra__sumario" href="#sumario" aria-label="Ir para o sumário" tabindex="-1"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></a>
+  <p class="barra__txt"><b>Caderno de Pedagogia</b>R$&nbsp;<span data-preco="">29,90</span> à vista</p>
+  <a class="btn btn--pequeno" href="https://pay.cakto.com.br/xjf68pd_1191873" data-checkout="" tabindex="-1">Comprar</a>
+</div>
+
+<script>
+/* Dados da oferta: troque aqui e a página inteira acompanha. */
+const OFERTA = {
+  checkout: "https://pay.cakto.com.br/xjf68pd_1191873",
+  preco: "29,90",
+  suporte: "pedagogiadeouro@gmail.com",
+  processador: "Cakto",                  // vazio não aparece
+  cnpj: "",                              // ex.: "00.000.000/0001-00". Vazio não aparece.
+  periodos: 8,
+};
+
+document.querySelectorAll("[data-preco]").forEach(el => { el.textContent = OFERTA.preco; });
+const [inteiro, cent] = OFERTA.preco.split(",");
+document.querySelector("[data-preco-inteiro]").textContent = inteiro;
+document.querySelector("[data-preco-cent]").textContent = cent ? "," + cent : "";
+document.querySelector(".preco").setAttribute("aria-label", "R$ " + OFERTA.preco);
+// Preço dividido pelos períodos do curso
+const porPeriodo = (parseFloat(OFERTA.preco.replace(".", "").replace(",", ".")) / OFERTA.periodos).toFixed(2).replace(".", ",");
+document.querySelectorAll("[data-por-periodo]").forEach(el => { el.textContent = porPeriodo; });
+if (OFERTA.checkout) document.querySelectorAll("[data-checkout]").forEach(a => { a.href = OFERTA.checkout; });
+document.querySelectorAll("[data-suporte]").forEach(a => { a.href = "mailto:" + OFERTA.suporte; a.textContent = OFERTA.suporte; });
+if (OFERTA.processador) document.querySelector("[data-processador]").textContent = " Pagamento processado pela " + OFERTA.processador + ".";
+if (OFERTA.cnpj) { const el = document.querySelector("[data-cnpj]"); el.textContent = "CNPJ " + OFERTA.cnpj; el.hidden = false; }
+
+const semMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const SUAVE = "cubic-bezier(.2, .7, .2, 1)";
+
+/* I. Fichas por período ---------------------------------------------- */
+const PERIODOS = [
+  {
+    "ciclo": "basico",
+    "nomeCiclo": "fundamentos",
+    "disc": "Fundamentos da Educação e Sociologia da Educação",
+    "materia": "Fundamentos da Educação",
+    "titulo": "Escola, sociedade e função da educação",
+    "chaves": [
+      "função social da escola",
+      "socialização",
+      "cultura"
+    ],
+    "habilidade": "Compreender a escola como instituição social.",
+    "aplicacao": "Análise de práticas escolares cotidianas.",
+    "antes": "Leitura e interpretação de textos.",
+    "caso": "A escola do bairro recebe alunos de realidades muito diferentes. Analise a função social dela nesse contexto."
+  },
+  {
+    "ciclo": "basico",
+    "nomeCiclo": "fundamentos",
+    "disc": "Filosofia da Educação e Psicologia da Educação",
+    "materia": "Psicologia da Educação",
+    "titulo": "Desenvolvimento e aprendizagem",
+    "chaves": [
+      "Piaget",
+      "Vygotsky",
+      "Wallon"
+    ],
+    "habilidade": "Compreender como os estudantes aprendem.",
+    "aplicacao": "Estratégias de ensino por faixa etária.",
+    "antes": "Fundamentos da Educação.",
+    "caso": "Uma criança resolve o problema com a ajuda da colega, mas não sozinha. Explique pela zona de desenvolvimento proximal."
+  },
+  {
+    "ciclo": "basico",
+    "nomeCiclo": "fundamentos",
+    "disc": "Didática e Alfabetização e Letramento",
+    "materia": "Alfabetização e Letramento",
+    "titulo": "Consciência fonológica, métodos e leitura",
+    "chaves": [
+      "consciência fonológica",
+      "método fônico",
+      "níveis de escrita"
+    ],
+    "habilidade": "Alfabetizar com método e diagnóstico.",
+    "aplicacao": "Atividades de consciência fonológica.",
+    "antes": "Psicologia da Educação.",
+    "caso": "Um aluno escreve “CVO” para “cavalo”. Identifique a hipótese de escrita e proponha a próxima atividade."
+  },
+  {
+    "ciclo": "clinico",
+    "nomeCiclo": "metodologias",
+    "disc": "Ensino de Língua Portuguesa e Ensino de Matemática",
+    "materia": "Ensino de Matemática",
+    "titulo": "Números, operações e resolução de problemas",
+    "chaves": [
+      "resolução de problemas",
+      "material concreto",
+      "sistema de numeração"
+    ],
+    "habilidade": "Construir conceitos matemáticos com sentido.",
+    "aplicacao": "Sequência de resolução de problemas.",
+    "antes": "Psicologia da Educação.",
+    "caso": "A turma arma a conta, mas não entende o problema. Planeje uma aula com material concreto."
+  },
+  {
+    "ciclo": "clinico",
+    "nomeCiclo": "metodologias",
+    "disc": "Currículo e BNCC e Avaliação da Aprendizagem",
+    "materia": "Avaliação da Aprendizagem",
+    "titulo": "Instrumentos, rubricas e devolutivas",
+    "chaves": [
+      "avaliação formativa",
+      "rubricas",
+      "devolutiva"
+    ],
+    "habilidade": "Avaliar para promover a aprendizagem.",
+    "aplicacao": "Elaboração de instrumentos de avaliação.",
+    "antes": "Currículo e planejamento.",
+    "caso": "Metade da turma foi mal na prova. Use o resultado para replanejar as próximas aulas."
+  },
+  {
+    "ciclo": "clinico",
+    "nomeCiclo": "metodologias",
+    "disc": "Educação Infantil e Educação de Jovens e Adultos",
+    "materia": "Educação Infantil",
+    "titulo": "Campos de experiências, brincar e interações",
+    "chaves": [
+      "campos de experiências",
+      "brincar",
+      "interações"
+    ],
+    "habilidade": "Planejar experiências para a primeira infância.",
+    "aplicacao": "Projeto pedagógico de Educação Infantil.",
+    "antes": "BNCC e Didática.",
+    "caso": "Turma de 4 anos em adaptação. Planeje uma semana de acolhimento com brincadeiras e roda de conversa."
+  },
+  {
+    "ciclo": "internato",
+    "nomeCiclo": "estágio e TCC",
+    "disc": "Educação Inclusiva e Estágio Supervisionado",
+    "materia": "Educação Inclusiva",
+    "titulo": "Educação especial, TDAH, TEA e adaptações",
+    "chaves": [
+      "adaptação curricular",
+      "AEE",
+      "acessibilidade"
+    ],
+    "habilidade": "Incluir todos os estudantes, com aprendizagem.",
+    "aplicacao": "Adaptação curricular comentada.",
+    "antes": "Psicologia da Educação.",
+    "caso": "Um aluno com TEA chega ao 2º ano. Adapte uma atividade de leitura sem tirá-lo da turma."
+  },
+  {
+    "ciclo": "internato",
+    "nomeCiclo": "estágio e TCC",
+    "disc": "Gestão Escolar, Legislação Educacional, Estágio Supervisionado e TCC",
+    "materia": "Gestão Escolar",
+    "titulo": "Coordenação pedagógica, PPP e clima escolar",
+    "chaves": [
+      "projeto político-pedagógico",
+      "gestão democrática",
+      "conselho escolar"
+    ],
+    "habilidade": "Organizar o trabalho pedagógico coletivo.",
+    "aplicacao": "Análise de rotinas de coordenação.",
+    "antes": "Legislação educacional.",
+    "caso": "A escola vai revisar o PPP. Organize a participação de famílias, estudantes e professores."
+  }
+];
+const ETAPAS = [
+  ["Conceito", 10, "Conceitos fundamentais do tema."],
+  ["Esquema", 20, "Esquema visual e correlação com a prática."],
+  ["Caso prático", 30, "O tema aplicado em uma situação de sala de aula."],
+  ["Questões", 15, "Questões de revisão e um caso comentado."],
+  ["Resumo", 5, "Cartão-resumo e flashcards para a revisão espaçada."],
+];
+
+const elAbas = document.getElementById("abas");
+const elPainel = document.getElementById("painel");
+elAbas.innerHTML = PERIODOS.map((p, i) =>
+  `<button class="aba c-${p.ciclo}" role="tab" type="button" id="aba-${i + 1}" aria-controls="painel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" aria-label="${i + 1}º período, ${p.nomeCiclo}">${i + 1}º</button>`
+).join("");
+const abas = [...elAbas.querySelectorAll(".aba")];
+
+function abrirPeriodo(i, opcoes = {}) {
+  const p = PERIODOS[i];
+  abas.forEach((a, j) => { a.setAttribute("aria-selected", j === i); a.tabIndex = j === i ? 0 : -1; });
+  elPainel.setAttribute("aria-labelledby", `aba-${i + 1}`);
+  elPainel.innerHTML = `
+    <p class="painel__disc"><b>${i + 1}º período, ${p.nomeCiclo}.</b> ${p.disc}.</p>
+    <article class="folha ficha">
+      <header class="folha__cab"><span>Caderno de Pedagogia</span><span>Ficha de estudo e revisão</span></header>
+      <div class="ficha__topo">
+        <p class="folha__meta">${p.materia}, ${i + 1}º período</p>
+        <h3 class="folha__titulo">${p.titulo}</h3>
+      </div>
+      <dl class="ficha__dados">
+        <div><dt>Palavras-chave</dt><dd><ul class="chaves">${p.chaves.map(c => `<li>${c}</li>`).join("")}</ul></dd></div>
+        <div><dt>Materiais</dt><dd>Resumo da disciplina, roteiro de estudo, caso prático, quadro comparativo e questões comentadas.</dd></div>
+        <div><dt>Habilidade</dt><dd>${p.habilidade}</dd></div>
+        <div><dt>Aplicação</dt><dd>${p.aplicacao}</dd></div>
+        <div><dt>Pré-requisito</dt><dd>${p.antes}</dd></div>
+      </dl>
+      <div class="ficha__bloco">
+        <p class="ficha__rotulo">Bloco de estudo, 80 minutos</p>
+        <div class="barra80" aria-hidden="true">${ETAPAS.map((e, k) => `<span class="s${k + 1}" style="--m:${e[1]};--k:${k}"></span>`).join("")}</div>
+        <ol class="etapas">${ETAPAS.map((e, k) => `<li class="s${k + 1}"><i></i><b>${e[0]}</b><span class="min">${e[1]} min</span><span class="desc">${e[2]}</span></li>`).join("")}</ol>
+      </div>
+      <div class="ficha__bloco">
+        <p class="ficha__rotulo">Três atividades práticas, para escolher uma</p>
+        <ol class="ativ">
+          <li><b>Análise de caso.</b> ${p.caso}</li>
+          <li><b>Quadro de revisão.</b> Comparar os conceitos e as etapas do tema.</li>
+          <li><b>Aplicação em Pedagogia.</b> Resolver uma situação prática de ${p.materia}.</li>
+        </ol>
+        <p class="nota">De 40 a 60 minutos cada.</p>
+      </div>
+      <p class="ficha__pe">Os flashcards de ${p.materia} entram na sua fila de revisão.</p>
+    </article>`;
+  if (opcoes.animar && !semMovimento) elPainel.animate([{ opacity: 0, transform: "translateY(12px)" }, { opacity: 1, transform: "none" }], { duration: 380, easing: SUAVE });
+  if (opcoes.focar) abas[i].focus();
+}
+abas.forEach((a, i) => a.addEventListener("click", () => abrirPeriodo(i, { animar: true })));
+elAbas.addEventListener("keydown", e => {
+  const i = abas.indexOf(document.activeElement);
+  if (i < 0) return;
+  const destino = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: abas.length - 1 }[e.key];
+  if (destino === undefined) return;
+  e.preventDefault();
+  abrirPeriodo((destino + abas.length) % abas.length, { animar: true, focar: true });
+});
+abrirPeriodo(0);
+
+/* III. Baralho de amostra --------------------------------------------- */
+const CARTOES = [
+  {
+    "disc": "Didática",
+    "p": "O que é sequência didática?",
+    "r": "Um conjunto ordenado de atividades, planejadas para alcançar um objetivo de aprendizagem."
+  },
+  {
+    "disc": "Psicologia da Educação",
+    "p": "O que é zona de desenvolvimento proximal?",
+    "r": "A distância entre o que o estudante faz sozinho e o que faz com mediação. O conceito é de Vygotsky."
+  },
+  {
+    "disc": "Alfabetização",
+    "p": "O que é consciência fonológica?",
+    "r": "A capacidade de refletir sobre os sons da fala. É a base da leitura e da escrita."
+  },
+  {
+    "disc": "Filosofia da Educação",
+    "p": "O que defendia Paulo Freire?",
+    "r": "Uma educação problematizadora, que parte da realidade do estudante e busca a conscientização."
+  },
+  {
+    "disc": "Fundamentos",
+    "p": "Qual é a função social da escola?",
+    "r": "Formar cidadãos, garantir as aprendizagens essenciais e reduzir desigualdades."
+  }
+];
+const NOTAS = [
+  { nome: "Errei", volta: "ainda hoje" },
+  { nome: "Difícil", volta: "amanhã" },
+  { nome: "Bom", volta: "em 3 dias" },
+  { nome: "Fácil", volta: "em 6 dias" },
+];
+const cartao = document.getElementById("cartao");
+const elDisc = document.getElementById("cartao-disc");
+const elConta = document.getElementById("cartao-conta");
+const elCorpo = document.getElementById("cartao-corpo");
+const elAcoes = document.getElementById("cartao-acoes");
+const elStatus = document.getElementById("deck-status");
+let atual = 0;
+const focarAcao = () => { const alvo = elAcoes.querySelector("button, a"); if (alvo) alvo.focus({ preventScroll: true }); };
+
+function mostrarFrente() {
+  const c = CARTOES[atual];
+  elDisc.textContent = c.disc;
+  elConta.textContent = `Cartão ${atual + 1} de ${CARTOES.length}`;
+  elCorpo.innerHTML = `<p class="cartao__pergunta">${c.p}</p>`;
+  elAcoes.innerHTML = `<button class="virar" type="button" id="virar">Ver resposta</button>`;
+  elAcoes.querySelector("#virar").addEventListener("click", virar);
+}
+function mostrarVerso() {
+  elCorpo.insertAdjacentHTML("beforeend", `<p class="cartao__resposta">${CARTOES[atual].r}</p>`);
+  elAcoes.innerHTML =
+    `<div class="notas"><p class="notas__rotulo">Como foi? O cartão volta conforme a sua resposta.</p>` +
+    NOTAS.map((n, i) => `<button class="nota-btn" type="button" data-nota="${i}">${n.nome}<small>${n.volta}</small></button>`).join("") + `</div>`;
+  elAcoes.querySelectorAll("[data-nota]").forEach(b => b.addEventListener("click", () => avaliar(+b.dataset.nota)));
+}
+/* o cartão gira no próprio eixo para mostrar o verso */
+function virar() {
+  if (semMovimento) { mostrarVerso(); focarAcao(); return; }
+  const ida = cartao.animate([{ transform: "rotateY(0)" }, { transform: "rotateY(-90deg)" }], { duration: 190, easing: "ease-in" });
+  ida.onfinish = () => {
+    mostrarVerso();
+    cartao.animate([{ transform: "rotateY(90deg)" }, { transform: "rotateY(0)" }], { duration: 300, easing: SUAVE });
+    focarAcao();
+  };
+}
+function avaliar(i) {
+  elStatus.textContent = `Agendado: este cartão volta ${NOTAS[i].volta}.`;
+  atual += 1;
+  trocar(atual < CARTOES.length ? mostrarFrente : mostrarFim);
+}
+function mostrarFim() {
+  elDisc.textContent = "Amostra concluída";
+  elConta.textContent = "";
+  elStatus.textContent = "";
+  elCorpo.innerHTML = `<div class="cartao__fim"><strong>Você revisou ${CARTOES.length} cartões.</strong><p>No caderno são 1.520, e ele agenda cada um para você.</p></div>`;
+  elAcoes.innerHTML =
+    `<div class="fim-acoes"><a class="btn" href="${OFERTA.checkout || "#preco"}">Comprar o caderno por R$&nbsp;${OFERTA.preco}</a>` +
+    `<button class="link-btn" type="button" id="de-novo">Revisar de novo</button></div>`;
+  elAcoes.querySelector("#de-novo").addEventListener("click", () => { atual = 0; trocar(mostrarFrente); });
+}
+/* o cartão avaliado sai da pilha e o próximo sobe */
+function trocar(render) {
+  if (semMovimento) { render(); focarAcao(); return; }
+  const sai = cartao.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translate(-34px, -6px) rotate(-4deg)" }], { duration: 200, easing: "ease-in" });
+  sai.onfinish = () => {
+    render();
+    cartao.animate([{ opacity: 0, transform: "translate(10px, 10px)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: SUAVE });
+    focarAcao();
+  };
+}
+document.getElementById("virar").addEventListener("click", virar);
+
+/* III. Galeria de cartões ---------------------------------------------- */
+const AMOSTRA = [
+  [
+    "Fundamentos",
+    "O que é Pedagogia?",
+    "A ciência da educação, que estuda o ensino, a aprendizagem e a formação humana."
+  ],
+  [
+    "Fundamentos",
+    "Educação formal, não formal ou informal: qual acontece na escola?",
+    "A formal."
+  ],
+  [
+    "Fundamentos",
+    "O que é intencionalidade pedagógica?",
+    "A finalidade clara do ato de ensinar, que orienta objetivos, métodos e avaliação."
+  ],
+  [
+    "Fundamentos",
+    "O que é práxis pedagógica?",
+    "A integração entre teoria e prática: refletir sobre a ação e agir com fundamento."
+  ],
+  [
+    "Fundamentos",
+    "O que é mediação pedagógica?",
+    "A intervenção intencional do professor entre o estudante e o conhecimento."
+  ],
+  [
+    "Filosofia",
+    "O que defendia John Dewey?",
+    "A aprendizagem pela experiência e a escola como vida em comunidade."
+  ],
+  [
+    "Filosofia",
+    "O que caracteriza o método Montessori?",
+    "Autonomia, materiais sensoriais e respeito ao ritmo de cada criança."
+  ],
+  [
+    "Filosofia",
+    "Quem propôs a educação problematizadora?",
+    "Paulo Freire."
+  ],
+  [
+    "Psicologia da Educação",
+    "Quais são os estágios de Piaget?",
+    "Sensório-motor, pré-operatório, operatório concreto e operatório formal."
+  ],
+  [
+    "Psicologia da Educação",
+    "O que é mediação em Vygotsky?",
+    "Aprender por meio de ferramentas, signos e interações com pessoas mais experientes."
+  ],
+  [
+    "Psicologia da Educação",
+    "O que é aprendizagem significativa?",
+    "Aprender ligando o conteúdo novo aos conhecimentos prévios. O conceito é de Ausubel."
+  ],
+  [
+    "Psicologia da Educação",
+    "O que propõe a teoria das inteligências múltiplas?",
+    "Que existem várias formas de inteligência, além da lógica e da verbal. A teoria é de Gardner."
+  ],
+  [
+    "Didática",
+    "O que é didática?",
+    "A disciplina que estuda o processo de ensino: objetivos, conteúdos, métodos e avaliação."
+  ],
+  [
+    "Didática",
+    "O que é plano de aula?",
+    "O documento com objetivos, conteúdos, recursos, procedimentos e avaliação da aula."
+  ],
+  [
+    "Didática",
+    "O que é metodologia ativa?",
+    "Uma estratégia em que o estudante participa ativamente, como os projetos e a sala de aula invertida."
+  ],
+  [
+    "Didática",
+    "O que é sala de aula invertida?",
+    "O estudante estuda o conteúdo antes e usa a aula para praticar e tirar dúvidas."
+  ],
+  [
+    "Didática",
+    "O que é gamificação?",
+    "O uso de elementos de jogos, como pontos e desafios, para engajar na aprendizagem."
+  ],
+  [
+    "Alfabetização",
+    "O que é o método fônico?",
+    "Ensinar a ler e a escrever pela relação entre letras e sons."
+  ],
+  [
+    "Alfabetização",
+    "O que é letramento?",
+    "O uso da leitura e da escrita nas práticas sociais."
+  ],
+  [
+    "Alfabetização",
+    "Para que serve a sondagem?",
+    "Para identificar a hipótese de escrita de cada estudante."
+  ],
+  [
+    "Avaliação",
+    "Avaliação formativa ou somativa: qual acompanha o processo?",
+    "A formativa."
+  ],
+  [
+    "Educação Infantil",
+    "O que são os campos de experiências?",
+    "A forma como a BNCC organiza as aprendizagens da Educação Infantil."
+  ],
+  [
+    "Inclusão",
+    "O que é o AEE?",
+    "O Atendimento Educacional Especializado, que complementa a escolarização na sala comum."
+  ],
+  [
+    "Legislação",
+    "Qual lei organiza a educação brasileira?",
+    "A LDB, Lei nº 9.394, de 1996."
+  ]
+];
+document.getElementById("galeria").innerHTML = AMOSTRA.map((c, i) =>
+  `<li class="mini"${i >= 12 ? " hidden data-extra" : ""}><p class="mini__disc">${c[0]}</p><p class="mini__p">${c[1]}</p><p class="mini__r">${c[2]}</p></li>`
+).join("");
+const btnMais = document.getElementById("mais");
+btnMais.addEventListener("click", () => {
+  [...document.querySelectorAll("[data-extra]")].forEach((el, k) => {
+    el.hidden = false;
+    if (!semMovimento) el.animate([{ opacity: 0, transform: "translateY(14px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: k * 45, easing: SUAVE, fill: "backwards" });
+  });
+  btnMais.hidden = true;
+});
+
+/* VI. Questão comentada ------------------------------------------------ */
+const QUESTAO = {
+  "certa": "B",
+  "comentario": "Na hipótese silábica, a criança usa uma letra para representar cada sílaba. Em “CVO”, as letras já têm valor sonoro: C de “ca”, V de “va” e O de “lo”."
+};
+const alts = [...document.querySelectorAll(".alt")];
+const elGabarito = document.getElementById("gabarito");
+const elDica = document.getElementById("questao-dica");
+function responder(letra) {
+  const acertou = letra === QUESTAO.certa;
+  alts.forEach(a => {
+    a.disabled = true;
+    a.classList.toggle("alt--certa", a.dataset.alt === QUESTAO.certa);
+    a.classList.toggle("alt--errada", a.dataset.alt === letra && !acertou);
+  });
+  elGabarito.innerHTML =
+    `<p class="gabarito__titulo">Gabarito: ${QUESTAO.certa}. ${acertou ? "Você acertou." : "Você marcou " + letra + "."}</p>` +
+    `<p>${QUESTAO.comentario}</p>` +
+    `<button class="link-btn" type="button" id="refazer">Responder de novo</button>`;
+  elDica.hidden = true;
+  elGabarito.querySelector("#refazer").addEventListener("click", () => {
+    alts.forEach(a => { a.disabled = false; a.classList.remove("alt--certa", "alt--errada"); });
+    elGabarito.innerHTML = "";
+    elDica.hidden = false;
+    alts[0].focus({ preventScroll: true });
+  });
+}
+alts.forEach(a => a.addEventListener("click", () => responder(a.dataset.alt)));
+
+/* Celular: grupos do que está incluído e marcador das fileiras deslizantes -- */
+const celular = matchMedia("(max-width: 619px)");
+const gruposInc = [...document.querySelectorAll(".grupo-inc")];
+gruposInc.forEach(g => { g.querySelector(".grupo-inc__n").textContent = g.querySelectorAll("li").length + " itens"; });
+function ajustarGrupos() {
+  gruposInc.forEach((g, i) => {
+    g.open = celular.matches ? i === 0 : true;
+    g.querySelector("summary").tabIndex = celular.matches ? 0 : -1;
+  });
+}
+ajustarGrupos();
+celular.addEventListener("change", ajustarGrupos);
+
+document.querySelectorAll(".trilho").forEach(trilho => {
+  const pos = document.createElement("div");
+  pos.className = "trilho-pos";
+  pos.setAttribute("aria-hidden", "true");
+  const marca = pos.appendChild(document.createElement("span"));
+  trilho.after(pos);
+  let pendente = false;
+  const atualizar = () => {
+    pendente = false;
+    const total = trilho.scrollWidth, visivel = trilho.clientWidth;
+    pos.style.visibility = total > visivel + 4 ? "visible" : "hidden";
+    marca.style.width = (visivel / total * 100) + "%";
+    marca.style.marginLeft = (trilho.scrollLeft / total * 100) + "%";
+  };
+  trilho.addEventListener("scroll", () => { if (!pendente) { pendente = true; requestAnimationFrame(atualizar); } }, { passive: true });
+  addEventListener("resize", atualizar);
+  atualizar();
+});
+
+/* Movimento: contagem dos números e revelação ao rolar ------------------ */
+function contar(el) {
+  const alvo = +el.dataset.alvo, inicio = performance.now(), duracao = 1500;
+  const passo = agora => {
+    const p = Math.min(1, (agora - inicio) / duracao);
+    el.textContent = Math.round(alvo * (1 - Math.pow(1 - p, 3))).toLocaleString("pt-BR");
+    if (p < 1) requestAnimationFrame(passo);
+  };
+  requestAnimationFrame(passo);
+}
+const revelaveis = [...document.querySelectorAll(".fatos, .sumario__titulo, .sumario__lista li, .cap__cab, .cap__corpo > *, .oferta__esq > .recibo")];
+if (!semMovimento && "IntersectionObserver" in window) {
+  revelaveis.forEach(el => {
+    el.setAttribute("data-rev", "");
+    el.style.setProperty("--i", Math.min([...el.parentElement.children].indexOf(el), 6));
+  });
+  const rev = new IntersectionObserver(entradas => entradas.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add("visto");
+    if (e.target.id === "fatos") e.target.querySelectorAll("[data-alvo]").forEach(contar);
+    rev.unobserve(e.target);
+  }), { rootMargin: "0px 0px -7% 0px", threshold: 0.04 });
+  revelaveis.forEach(el => rev.observe(el));
+}
+
+/* Capa: o flashcard vira ao toque ---------------------------------------- */
+const CAPA_CARTOES = [
+  [
+    "Didática",
+    "O que é sequência didática?",
+    "Atividades ordenadas para chegar a um objetivo de aprendizagem."
+  ],
+  [
+    "Alfabetização",
+    "O que é o método fônico?",
+    "Ensinar a ler pela relação entre letras e sons."
+  ],
+  [
+    "Aprendizagem",
+    "O que é mediação?",
+    "A ação intencional do professor entre o aluno e o conhecimento."
+  ],
+  [
+    "Legislação",
+    "O que é a LDB?",
+    "A lei que organiza a educação brasileira, de 1996."
+  ]
+];
+const capaCartao = document.getElementById("capa-cartao");
+const capaDisc = document.getElementById("capa-disc");
+const capaConta = document.getElementById("capa-conta");
+const capaQ = document.getElementById("capa-q");
+const capaR = document.getElementById("capa-r");
+const verboToque = matchMedia("(hover: hover) and (pointer: fine)").matches ? "Clique" : "Toque";
+let capaI = 0, capaVerso = false, capaTocou = false, capaVirando = false;
+
+function pintarCapa() {
+  const [disc, pergunta, resposta] = CAPA_CARTOES[capaI];
+  capaDisc.textContent = "Flashcard, " + disc;
+  capaQ.textContent = pergunta;
+  capaConta.textContent = capaVerso ? "volta em 3 dias" : `${capaI + 1} de ${CAPA_CARTOES.length}`;
+  capaR.textContent = capaVerso ? resposta : `${verboToque} para ver a resposta`;
+  capaR.classList.toggle("vitrine__r--dica", !capaVerso);
+}
+function virarCapa() {
+  if (capaVirando) return;
+  const avancar = () => {
+    if (capaVerso) { capaI = (capaI + 1) % CAPA_CARTOES.length; capaVerso = false; } else { capaVerso = true; }
+    pintarCapa();
+  };
+  if (semMovimento || !capaCartao.animate) { avancar(); return; }
+  capaVirando = true;
+  // o cartão se fecha no próprio eixo, troca de face e abre de novo
+  capaCartao.animate([{ scale: "1 1" }, { scale: "1 .03" }], { duration: 170, easing: "ease-in" }).onfinish = () => {
+    avancar();
+    capaCartao.animate([{ scale: "1 .03" }, { scale: "1 1" }], { duration: 290, easing: SUAVE }).onfinish = () => { capaVirando = false; };
+  };
+}
+capaCartao.addEventListener("click", () => { capaTocou = true; virarCapa(); });
+pintarCapa();
+// Na entrada o cartão mostra uma resposta sozinho e para na pergunta seguinte, à espera do toque
+if (!semMovimento) {
+  setTimeout(() => { if (!capaTocou) virarCapa(); }, 2600);
+  setTimeout(() => { if (!capaTocou && capaVerso) virarCapa(); }, 6400);
+}
+
+/* Capa: as páginas da vitrine acompanham o ponteiro ---------------------- */
+const capa = document.getElementById("capa");
+const vitrine = document.getElementById("vitrine");
+if (!semMovimento && matchMedia("(hover: hover) and (pointer: fine)").matches) {
+  let quadro = 0;
+  capa.addEventListener("pointermove", e => {
+    if (quadro) return;
+    quadro = requestAnimationFrame(() => {
+      const r = capa.getBoundingClientRect();
+      vitrine.style.setProperty("--mx", ((e.clientX - r.left) / r.width - .5).toFixed(3));
+      vitrine.style.setProperty("--my", ((e.clientY - r.top) / r.height - .5).toFixed(3));
+      quadro = 0;
+    });
+  });
+  capa.addEventListener("pointerleave", () => { vitrine.style.setProperty("--mx", 0); vitrine.style.setProperty("--my", 0); });
+}
+
+/* Linha de progresso da leitura ----------------------------------------- */
+const progresso = document.getElementById("progresso");
+let agendado = false;
+addEventListener("scroll", () => {
+  if (agendado) return;
+  agendado = true;
+  requestAnimationFrame(() => {
+    const total = document.documentElement.scrollHeight - innerHeight;
+    progresso.style.transform = `scaleX(${total > 0 ? Math.min(1, scrollY / total) : 0})`;
+    agendado = false;
+  });
+}, { passive: true });
+
+/* Barra de compra no celular ------------------------------------------- */
+const barra = document.getElementById("barra");
+const vistos = new Map();
+const obs = new IntersectionObserver(entradas => {
+  entradas.forEach(e => vistos.set(e.target.id, e.isIntersecting));
+  const passouCapa = vistos.get("acao-capa") === false && window.scrollY > 200;
+  const mostra = passouCapa && !vistos.get("recibo");
+  barra.dataset.visivel = mostra;
+  barra.querySelectorAll("a").forEach(a => { a.tabIndex = mostra ? 0 : -1; });
+});
+obs.observe(document.getElementById("acao-capa"));
+obs.observe(document.getElementById("recibo"));
+</script>
+
+
+</body></html>
